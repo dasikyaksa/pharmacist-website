@@ -190,19 +190,18 @@ ul { list-style: none; }
   color: var(--pink-dark);
   margin-bottom: 10px;
 }
-.profile-bio {
+.profile-bio-list {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 6px;
 }
-.bio-chip {
-  font-size: 11.5px;
+.profile-bio-list li {
+  font-size: 13.5px;
   color: var(--text-soft);
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-pill);
-  padding: 3px 10px;
-  white-space: nowrap;
+  line-height: 1.5;
 }
 
 .profile-insta-btn {
@@ -771,7 +770,7 @@ ul { list-style: none; }
     flex-direction: column;
     text-align: center;
   }
-  .profile-bio { justify-content: center; }
+  .profile-bio-list { align-items: center; }
 
   /* 3열 → 2열 */
   .mustread-grid,
