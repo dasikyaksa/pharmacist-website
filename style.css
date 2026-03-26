@@ -216,8 +216,8 @@ ul { list-style: none; }
   gap: 5px;
   font-size: 12.5px;
   font-weight: 700;
-  padding: 7px 16px;
-  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  border-radius: 12px;
   transition: background .2s, transform .15s;
   color: var(--white);
   white-space: nowrap;
@@ -784,14 +784,34 @@ ul { list-style: none; }
 
   /* 3열 → 2열 */
   .mustread-grid,
-  .card-grid,
   .search-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* 4열 → 1열 */
+  /* 팩폭 3열 → 4열 */
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  /* 4열 유지 */
   .product-card-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  /* 4열 카드 글씨 축소 */
+  .product-card-grid .card-name,
+  .card-grid .card-name {
+    font-size: 10px;
+  }
+  .product-card-grid .card-episode,
+  .card-grid .card-episode {
+    font-size: 9px;
+  }
+  .product-card-grid .card-tags,
+  .card-grid .card-tags {
+    display: none;
   }
 
   /* 캘린더 */
