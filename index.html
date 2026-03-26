@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박약다식 한 눈에 보기</title>
+  <meta name="description" content="약사 크리에이터 박소윤의 공구일정, 사용설명서, 팩폭시리즈 한 눈에 보기">
+
+  <!-- Pretendard 폰트 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header id="header">
+    <div class="header-inner">
+
+      <!-- 로고 -->
+      <div class="logo">
+        <span class="logo-big">박약다식</span>
+        <span class="logo-small">한 눈에 보기</span>
+      </div>
+
+      <!-- 햄버거 (모바일) -->
+      <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- 네비게이션 -->
+      <nav id="nav" role="navigation">
+        <a class="nav-link" href="#mustread" data-section="mustread">공구 참여 전 필독!</a>
+        <a class="nav-link" href="#schedule" data-section="schedule">다음 공구 일정</a>
+        <a class="nav-link" href="#manuals"  data-section="manuals">사용설명서</a>
+        <a class="nav-link" href="#facpok"   data-section="facpok">팩폭 시리즈</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       PROFILE
+  ═══════════════════════════════════════════ -->
+  <section id="profile">
+    <div class="wrap">
+      <div class="profile-card">
+
+        <!-- 프로필 사진 -->
+        <div class="profile-photo-wrap">
+          <!-- app.js 에서 img 삽입, 실패 시 이니셜 표시 -->
+        </div>
+
+        <!-- 소개 -->
+        <div class="profile-info">
+          <p class="profile-name">박소윤 약사</p>
+          <p class="profile-tagline">솔직한 영양제 팩폭 성지</p>
+          <div class="profile-bio">
+            <span class="bio-chip">임상약학 석사, 박사 과정중</span>
+            <span class="bio-chip">화장품조제관리사 자격증</span>
+            <span class="bio-chip">약사 대상 강사</span>
+          </div>
+          <a class="profile-insta-btn" href="#" target="_blank" rel="noopener">
+            📷 인스타그램 바로가기
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SEARCH
+  ═══════════════════════════════════════════ -->
+  <section id="search">
+    <div class="wrap">
+      <p class="search-label">원하는 내용을 검색해보세요</p>
+      <div class="search-bar">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="제품명, 키워드로 검색 (예: 루테인, 오메가3, 팩폭...)"
+          autocomplete="off"
+        >
+        <span class="search-icon">🔍</span>
+      </div>
+      <div id="search-results" class="hidden"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       섹션 1: 공구 참여 전 필독!
+  ═══════════════════════════════════════════ -->
+  <section id="mustread">
+    <div class="wrap">
+      <h2 class="section-title">공구 참여 전 필독! 📌</h2>
+      <p class="section-sub">공구 신청 전에 꼭 읽어주세요</p>
+      <div class="mustread-grid" id="mustread-grid">
+        <!-- app.js 에서 렌더링 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       섹션 2: 다음 공구 일정 미리 보기
+  ═══════════════════════════════════════════ -->
+  <section id="schedule">
+    <div class="wrap">
+      <h2 class="section-title">다음 공구 일정 미리 보기 🗓️</h2>
+      <p class="section-sub">일정을 클릭하면 해당 공구 페이지로 연결됩니다</p>
+
+      <div class="calendar-wrap">
+        <!-- 캘린더 헤더 -->
+        <div class="cal-header">
+          <button class="cal-nav-btn" id="cal-prev" aria-label="이전 달">‹</button>
+          <span class="cal-month-label" id="cal-month-label"></span>
+          <button class="cal-nav-btn" id="cal-next" aria-label="다음 달">›</button>
+        </div>
+
+        <!-- 요일 -->
+        <div class="cal-weekdays">
+          <div class="cal-weekday">일</div>
+          <div class="cal-weekday">월</div>
+          <div class="cal-weekday">화</div>
+          <div class="cal-weekday">수</div>
+          <div class="cal-weekday">목</div>
+          <div class="cal-weekday">금</div>
+          <div class="cal-weekday">토</div>
+        </div>
+
+        <!-- 날짜 그리드 -->
+        <div class="cal-grid" id="cal-grid">
+          <!-- app.js 에서 렌더링 -->
+        </div>
+      </div>
+
+      <!-- 알림 안내 -->
+      <div class="cal-notice">
+        <span class="cal-notice-icon">💡</span>
+        <span>공구 일정 썸네일을 클릭하면 해당 제품 공구 페이지로 이동합니다.
+        게시물에 <strong>"알림"</strong> 댓글을 달아두시면 공구 오픈 시 알림을 드려요!</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       섹션 3: 공구제품 사용설명서 몰아보기
+  ═══════════════════════════════════════════ -->
+  <section id="manuals">
+    <div class="wrap">
+      <h2 class="section-title">공구제품 사용설명서 몰아보기 💊</h2>
+      <p class="section-sub">제품을 클릭하면 최신 공구 피드로 연결됩니다</p>
+      <div class="card-grid" id="products-grid">
+        <!-- app.js 에서 렌더링 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       섹션 4: 팩폭 시리즈 몰아보기
+  ═══════════════════════════════════════════ -->
+  <section id="facpok">
+    <div class="wrap">
+      <h2 class="section-title">팩폭 시리즈 몰아보기 💥</h2>
+      <p class="section-sub">시리즈별로 순서대로 모아봐요</p>
+      <div id="facpok-container">
+        <!-- app.js 에서 렌더링 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer id="footer">
+    <p class="footer-logo">박약다식</p>
+    <p class="footer-sub">솔직한 영양제 팩폭 성지</p>
+    <a class="footer-insta" href="#" target="_blank" rel="noopener" id="footer-insta-link">
+      📷 인스타그램
+    </a>
+    <p class="footer-copy">© 2026 박약다식 · 박소윤 약사</p>
+  </footer>
+
+  <!-- 데이터 + 앱 스크립트 -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // 푸터 인스타 링크 동기화
+    document.getElementById('footer-insta-link').href = DATA.profile.instagramUrl;
+  </script>
+
+</body>
+</html>
