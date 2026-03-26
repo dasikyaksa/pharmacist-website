@@ -204,23 +204,28 @@ ul { list-style: none; }
   line-height: 1.5;
 }
 
-.profile-insta-btn {
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.profile-link-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  margin-top: 12px;
-  background: var(--pink-main);
-  color: var(--white);
+  gap: 5px;
   font-size: 12.5px;
   font-weight: 700;
-  padding: 8px 18px;
+  padding: 7px 16px;
   border-radius: var(--radius-pill);
   transition: background .2s, transform .15s;
+  color: var(--white);
+  white-space: nowrap;
 }
-.profile-insta-btn:hover {
-  background: var(--pink-dark);
-  transform: translateY(-1px);
-}
+.profile-link-btn:hover { transform: translateY(-1px); opacity: .88; }
+.profile-link-btn.insta   { background: var(--pink-dark); }
+.profile-link-btn.kakao   { background: #f9d84e; color: #3c1e1e; }
+.profile-link-btn.opentalk{ background: #ffcd00; color: #3c1e1e; }
 
 /* =============================================
    SEARCH SECTION

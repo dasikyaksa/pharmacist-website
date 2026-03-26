@@ -321,8 +321,6 @@ const DATA = {
     { group: "약국 꿀팁", title: "흉터약 점수 매기기",      tags: ["흉터","약국","점수"],    thumbnail: "images/facpok/DVrh4yizzpk.jpg", link: "https://www.instagram.com/p/DVrh4yizzpk/" },
     { group: "약국 꿀팁", title: "피임약 발암물질 논란",    tags: ["피임약","발암"],         thumbnail: "images/facpok/DWSV3rpk7oG.jpg", link: "https://www.instagram.com/p/DWSV3rpk7oG/" },
     { group: "약국 꿀팁", title: "빌베리 영양제 이슈",      tags: ["빌베리","보라물"],       thumbnail: "images/facpok/DVhf_Vwj4cT.jpg", link: "https://www.instagram.com/p/DVhf_Vwj4cT/" },
-    { group: "약국 꿀팁", title: "빌베리 이슈 추가 정리",   tags: ["빌베리","이슈"],         thumbnail: "images/facpok/DVZnhDWkzUr.jpg", link: "https://www.instagram.com/p/DVZnhDWkzUr/" },
-    // ── 팩폭 연구소 ──
-    { group: "팩폭 연구소", title: "약학다식 팩폭 연구소 오픈", tags: ["팩폭연구소","오픈"], thumbnail: "images/facpok/DTuJ0UmjyTz.jpg", link: "https://www.instagram.com/p/DTuJ0UmjyTz/" }
+    { group: "약국 꿀팁", title: "빌베리 이슈 추가 정리",   tags: ["빌베리","이슈"],         thumbnail: "images/facpok/DVZnhDWkzUr.jpg", link: "https://www.instagram.com/p/DVZnhDWkzUr/" }
   ]
 };
