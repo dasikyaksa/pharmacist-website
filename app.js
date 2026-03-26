@@ -169,7 +169,8 @@ function renderProducts() {
           name:      p.name,
           thumbnail: p.thumbnail,
           link:      p.link,
-          tags:      p.tags
+          tags:      p.tags,
+          comingSoon: p.comingSoon || null
         })).join('')}
       </div>
     </div>
@@ -209,12 +210,28 @@ function renderFacpok() {
 /* ──────────────────────────────────────────
    공통 카드 HTML 생성
 ────────────────────────────────────────── */
-function makeContentCard({ name, episode, thumbnail, link, tags }) {
+function makeContentCard({ name, episode, thumbnail, link, tags, comingSoon }) {
   const tagsHtml = (tags || [])
     .slice(0, 3)
     .map(t => `<span class="card-tag">${t}</span>`)
     .join('');
   const episodeHtml = episode ? `<p class="card-episode">${episode}</p>` : '';
+
+  // comingSoon 항목: 클릭 안 되고 뱃지만 표시
+  if (comingSoon) {
+    return `
+    <div class="content-card content-card--coming">
+      <div class="card-thumb-wrap">
+        <img class="card-thumb" src="${thumbnail}" alt="${name}" loading="lazy">
+        <div class="card-coming-badge">🌸 ${comingSoon}</div>
+      </div>
+      <div class="card-label">
+        <p class="card-name">${name}</p>
+        <div class="card-tags">${tagsHtml}</div>
+      </div>
+    </div>
+  `;
+  }
 
   return `
     <a class="content-card" href="${link}" target="_blank" rel="noopener">
