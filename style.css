@@ -142,20 +142,22 @@ ul { list-style: none; }
    ============================================= */
 #profile {
   background: var(--pink-pale);
-  padding: 36px 0 32px;
+  padding: 0 0 0;
   border-bottom: 1px solid var(--border);
+  overflow: hidden;
 }
 
 .profile-card {
   display: flex;
-  align-items: center;
-  gap: 24px;
+  align-items: flex-end;
+  gap: 32px;
+  min-height: 300px;
 }
 
 .profile-photo-wrap {
   flex-shrink: 0;
-  width: 150px;
-  height: 200px;
+  width: 200px;
+  height: 300px;
   border-radius: 0;
   overflow: visible;
   background: transparent;
@@ -174,6 +176,7 @@ ul { list-style: none; }
 
 .profile-info {
   flex: 1;
+  padding: 32px 0;
 }
 .profile-name {
   font-size: 20px;
@@ -768,8 +771,8 @@ ul { list-style: none; }
     text-align: center;
   }
   .profile-photo-wrap {
-    width: 120px;
-    height: 160px;
+    width: 160px;
+    height: 240px;
   }
   .profile-bio-list { align-items: center; }
 
