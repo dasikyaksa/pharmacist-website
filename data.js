@@ -47,48 +47,188 @@ const DATA = {
   // ──────────────────────────────────────────────
   calendar: [
     {
-      title: "빌베리",
-      start: "2026-03-28",
-      end: "2026-04-06",
-      thumbnail: "https://placehold.co/80x80/FF8FAB/FFFFFF?text=빌베리",
-      link: "https://www.instagram.com/p/CAL_PLACEHOLDER1/"
+        "title": "람노플 유산균",
+        "start": "2026-03-17",
+        "end": "2026-03-23",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%9E%8C%EB%85%B8%ED%94%8C%20%EC%9C%A0%EC%82%B0%EA%B7%A0",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
-      title: "여성유산균",
-      start: "2026-04-01",
-      end: "2026-04-10",
-      thumbnail: "https://placehold.co/80x80/FF6B9D/FFFFFF?text=여성유산균",
-      link: "https://www.instagram.com/p/CAL_PLACEHOLDER2/"
+        "title": "생리대",
+        "start": "2026-03-23",
+        "end": "2026-03-29",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%83%9D%EB%A6%AC%EB%8C%80",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
-      title: "오메가 미니",
-      start: "2026-04-08",
-      end: "2026-04-17",
-      thumbnail: "https://placehold.co/80x80/F48FB1/FFFFFF?text=오메가미니",
-      link: "https://www.instagram.com/p/CAL_PLACEHOLDER3/"
+        "title": "루아빌",
+        "start": "2026-03-26",
+        "end": "2026-04-01",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%A3%A8%EC%95%84%EB%B9%8C",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
-      title: "마그네슘",
-      start: "2026-04-15",
-      end: "2026-04-24",
-      thumbnail: "https://placehold.co/80x80/EC407A/FFFFFF?text=마그네슘",
-      link: "https://www.instagram.com/p/CAL_PLACEHOLDER4/"
+        "title": "큐로세틴",
+        "start": "2026-03-31",
+        "end": "2026-04-06",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%ED%81%90%EB%A1%9C%EC%84%B8%ED%8B%B4",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
-      title: "베르베린",
-      start: "2026-04-22",
-      end: "2026-05-01",
-      thumbnail: "https://placehold.co/80x80/AD1457/FFFFFF?text=베르베린",
-      link: "https://www.instagram.com/p/CAL_PLACEHOLDER5/"
+        "title": "분홍이",
+        "start": "2026-04-06",
+        "end": "2026-04-08",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%B6%84%ED%99%8D%EC%9D%B4",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
-      title: "분홍이",
-      start: "2026-05-01",
-      end: "2026-05-10",
-      thumbnail: "https://placehold.co/80x80/FF80AB/FFFFFF?text=분홍이",
-      link: "https://www.instagram.com/p/CAL_PLACEHOLDER6/"
+        "title": "비타민D 예정!",
+        "start": "2026-04-09",
+        "end": "2026-04-15",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%B9%84%ED%83%80%EB%AF%BCD%20%EC%98%88%EC%A0%95%21",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "마그샷",
+        "start": "2026-04-14",
+        "end": "2026-04-20",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%A7%88%EA%B7%B8%EC%83%B7",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "나노레시피 공구",
+        "start": "2026-04-16",
+        "end": "2026-04-22",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%82%98%EB%85%B8%EB%A0%88%EC%8B%9C%ED%94%BC%20%EA%B3%B5%EA%B5%AC",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "베르베린",
+        "start": "2026-04-21",
+        "end": "2026-04-27",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%B2%A0%EB%A5%B4%EB%B2%A0%EB%A6%B0",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "오메안비려유",
+        "start": "2026-04-23",
+        "end": "2026-04-29",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%98%A4%EB%A9%94%EC%95%88%EB%B9%84%EB%A0%A4%EC%9C%A0",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "붓기 영양제",
+        "start": "2026-04-28",
+        "end": "2026-05-04",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%B6%93%EA%B8%B0%20%EC%98%81%EC%96%91%EC%A0%9C",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "칼마디",
+        "start": "2026-04-30",
+        "end": "2026-05-06",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%B9%BC%EB%A7%88%EB%94%94",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "사장님 off",
+        "start": "2026-05-01",
+        "end": "2026-05-09",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%82%AC%EC%9E%A5%EB%8B%98%20off",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "오메가3 미니",
+        "start": "2026-05-01",
+        "end": "2026-05-07",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%98%A4%EB%A9%94%EA%B0%803%20%EB%AF%B8%EB%8B%88",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "유산균 2종",
+        "start": "2026-05-11",
+        "end": "2026-05-17",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%9C%A0%EC%82%B0%EA%B7%A0%202%EC%A2%85",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "올리브유",
+        "start": "2026-05-15",
+        "end": "2026-05-20",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%98%AC%EB%A6%AC%EB%B8%8C%EC%9C%A0",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "이노시톨",
+        "start": "2026-05-19",
+        "end": "2026-05-25",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%9D%B4%EB%85%B8%EC%8B%9C%ED%86%A8",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "퓨어알티지",
+        "start": "2026-05-21",
+        "end": "2026-05-27",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%ED%93%A8%EC%96%B4%EC%95%8C%ED%8B%B0%EC%A7%80",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "바쿠치올",
+        "start": "2026-05-26",
+        "end": "2026-06-01",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%B0%94%EC%BF%A0%EC%B9%98%EC%98%AC",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "노랑이",
+        "start": "2026-05-28",
+        "end": "2026-06-03",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%85%B8%EB%9E%91%EC%9D%B4",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "큐로세틴",
+        "start": "2026-06-02",
+        "end": "2026-06-08",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%ED%81%90%EB%A1%9C%EC%84%B8%ED%8B%B4",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "쏙앤쏙",
+        "start": "2026-06-09",
+        "end": "2026-06-15",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%8F%99%EC%95%A4%EC%8F%99",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "아미노콤맥스",
+        "start": "2026-06-11",
+        "end": "2026-06-17",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%95%84%EB%AF%B8%EB%85%B8%EC%BD%A4%EB%A7%A5%EC%8A%A4",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "멜라코지나이트타임",
+        "start": "2026-06-16",
+        "end": "2026-06-22",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%A9%9C%EB%9D%BC%EC%BD%94%EC%A7%80%EB%82%98%EC%9D%B4%ED%8A%B8%ED%83%80%EC%9E%84",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "람노플",
+        "start": "2026-06-18",
+        "end": "2026-06-24",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%9E%8C%EB%85%B8%ED%94%8C",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "오메츄",
+        "start": "2026-06-23",
+        "end": "2026-06-29",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%98%A4%EB%A9%94%EC%B8%84",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
     }
-  ],
+],
 
   // ──────────────────────────────────────────────
   // 섹션 3: 공구제품 사용설명서 몰아보기
