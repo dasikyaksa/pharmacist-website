@@ -518,21 +518,27 @@ ul { list-style: none; }
 
 /* 카테고리 블록 */
 .product-category {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 .product-category:last-child {
   margin-bottom: 0;
 }
 .product-category-title {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--primary);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--pink-dark);
   background: var(--pink-light);
-  border-left: 4px solid var(--primary);
-  padding: 8px 14px;
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  margin-bottom: 16px;
-  letter-spacing: -0.3px;
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+/* 사용설명서 전용 4열 그리드 */
+.product-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
 }
 
 /* =============================================
@@ -748,6 +754,11 @@ ul { list-style: none; }
   .mustread-grid,
   .card-grid,
   .search-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* 4열 → 2열 */
+  .product-card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
