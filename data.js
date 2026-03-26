@@ -240,9 +240,9 @@ const DATA = {
       category: "오메가3",
       items: [
         { name: "오메안비려유",    tags: ["오메가3", "알티지", "혈관"],  thumbnail: "images/products/prod_omegabig.jpg",          link: "https://www.instagram.com/p/DTz6RsFj6OG/" },
-        { name: "오메가미니",      tags: ["오메가3", "소형", "혈관"],    thumbnail: "https://placehold.co/400x400/ffd6d6/FFFFFF?text=오메가미니",    link: "#" },
+        { name: "오메가미니",      tags: ["오메가3", "소형", "혈관"],    thumbnail: "images/products/prod_omega_shared.jpg", link: "https://www.instagram.com/p/DUmLGgHE16J/" },
         { name: "오메츄",          tags: ["오메가3", "젤리", "어린이"],  thumbnail: "images/products/prod_omegachew.jpg",         link: "https://www.instagram.com/p/DSudvtICeDN/" },
-        { name: "필더데이 오메가", tags: ["오메가3", "필더데이"],        thumbnail: "https://placehold.co/400x400/ffd6d6/FFFFFF?text=필더데이오메가", link: "#" }
+        { name: "필더데이 오메가", tags: ["오메가3", "필더데이"],        thumbnail: "images/products/prod_omega_shared.jpg", link: "https://www.instagram.com/p/DUmLGgHE16J/" }
       ]
     },
     {
