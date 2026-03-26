@@ -517,8 +517,7 @@ ul { list-style: none; }
 
 /* 알림 콜아웃 */
 .manual-callout {
-  display: flex;
-  align-items: center;
+  display: block;
   gap: 8px;
   background: #fff;
   border-left: 4px solid var(--pink-dark);
@@ -785,9 +784,9 @@ ul { list-style: none; }
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* 4열 → 2열 */
+  /* 4열 → 1열 */
   .product-card-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   /* 캘린더 */

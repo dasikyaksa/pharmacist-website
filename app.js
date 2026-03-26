@@ -174,10 +174,7 @@ function makeDayCell(dayNum, otherMonth, isToday, dow, events, _) {
           showCalPopup('해당 제품은 상세보기와 사전알림이 불가합니다')
         );
       }
-      btn.innerHTML = `
-        <img class="cal-event-thumb" src="${ev.thumbnail}" alt="${ev.title}" loading="lazy">
-        <span class="cal-event-name">${ev.title}</span>
-      `;
+      btn.innerHTML = `<span class="cal-event-name">${ev.title}</span>`;
       cell.appendChild(btn);
     });
   }
