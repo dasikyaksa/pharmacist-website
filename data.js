@@ -308,19 +308,17 @@ const DATA = {
     { group: "영양제 팩폭", title: "팩폭 시리즈 안내 & 2025 최악의 영양제", tags: ["팩폭","영양제"], thumbnail: "images/facpok/DS5tnFtEx-8.jpg", link: "https://www.instagram.com/p/DS5tnFtEx-8/" },
     { group: "영양제 팩폭", title: "팩폭타임 16탄 — 약국입점 영양제",      tags: ["팩폭","약국"],   thumbnail: "images/facpok/DVYc3_Hj6de.jpg", link: "https://www.instagram.com/p/DVYc3_Hj6de/" },
     { group: "영양제 팩폭", title: "알부민 팩폭",           tags: ["알부민","팩폭"],         thumbnail: "images/facpok/DQ0ogvCD8eF.jpg", link: "https://www.instagram.com/p/DQ0ogvCD8eF/" },
-    { group: "영양제 팩폭", title: "호갱방지 팩폭타임 8탄", tags: ["호갱방지","팩폭"],       thumbnail: "images/facpok/DQGr97-D2m_.jpg", link: "https://www.instagram.com/p/DQGr97-D2m_/" },
     { group: "영양제 팩폭", title: "호갱방지 팩폭 9탄",     tags: ["호갱방지","흡수율"],     thumbnail: "images/facpok/DQd_AvKj4qm.jpg", link: "https://www.instagram.com/p/DQd_AvKj4qm/" },
     { group: "영양제 팩폭", title: "호갱방지 팩폭타임",     tags: ["호갱방지","팩폭"],       thumbnail: "images/facpok/DN981i2j1fe.jpg", link: "https://www.instagram.com/p/DN981i2j1fe/" },
     { group: "영양제 팩폭", title: "흡수율 팩폭",           tags: ["흡수율","팩폭"],         thumbnail: "images/facpok/DK2B0Aivu4c.jpg", link: "https://www.instagram.com/p/DK2B0Aivu4c/" },
-    { group: "영양제 팩폭", title: "팩폭 정리본 인기 게시물", tags: ["팩폭","정리"],         thumbnail: "images/facpok/DFDQ0NdvyaH.jpg", link: "https://www.instagram.com/p/DFDQ0NdvyaH/" },
-    { group: "영양제 팩폭", title: "헛소리 광고제품 팩폭 (재업)", tags: ["팩폭","광고"],    thumbnail: "images/facpok/DFbYAOATe_W.jpg", link: "https://www.instagram.com/p/DFbYAOATe_W/" },
+    { group: "영양제 팩폭", title: "사지마템 5가지",        tags: ["사지마템","약국"],       thumbnail: "images/facpok/DTue1QUj6K8.jpg", link: "https://www.instagram.com/p/DTue1QUj6K8/" },
+    { group: "영양제 팩폭", title: "빌베리 영양제 이슈",    tags: ["빌베리","보라물"],       thumbnail: "images/facpok/DVhf_Vwj4cT.jpg", link: "https://www.instagram.com/p/DVhf_Vwj4cT/" },
     // ── 약국 꿀팁 ──
     { group: "약국 꿀팁", title: "약사들만 아는 솔직 꿀팁", tags: ["약국","꿀팁","절약"],   thumbnail: "images/facpok/DUlAQuCjzLz.jpg", link: "https://www.instagram.com/p/DUlAQuCjzLz/" },
-    { group: "약국 꿀팁", title: "파란안약 팩폭",           tags: ["안약","눈"],             thumbnail: "images/facpok/DUPswELD2JZ.jpg", link: "https://www.instagram.com/p/DUPswELD2JZ/" },
-    { group: "약국 꿀팁", title: "사지마템 5가지",          tags: ["사지마템","약국"],       thumbnail: "images/facpok/DTue1QUj6K8.jpg", link: "https://www.instagram.com/p/DTue1QUj6K8/" },
     { group: "약국 꿀팁", title: "흉터약 점수 매기기",      tags: ["흉터","약국","점수"],    thumbnail: "images/facpok/DVrh4yizzpk.jpg", link: "https://www.instagram.com/p/DVrh4yizzpk/" },
     { group: "약국 꿀팁", title: "피임약 발암물질 논란",    tags: ["피임약","발암"],         thumbnail: "images/facpok/DWSV3rpk7oG.jpg", link: "https://www.instagram.com/p/DWSV3rpk7oG/" },
-    { group: "약국 꿀팁", title: "빌베리 영양제 이슈",      tags: ["빌베리","보라물"],       thumbnail: "images/facpok/DVhf_Vwj4cT.jpg", link: "https://www.instagram.com/p/DVhf_Vwj4cT/" },
-    { group: "약국 꿀팁", title: "빌베리 이슈 추가 정리",   tags: ["빌베리","이슈"],         thumbnail: "images/facpok/DVZnhDWkzUr.jpg", link: "https://www.instagram.com/p/DVZnhDWkzUr/" }
+    // ── 기타 ──
+    { group: "기타", title: "파란안약 팩폭",           tags: ["안약","눈"],             thumbnail: "images/facpok/DUPswELD2JZ.jpg", link: "https://www.instagram.com/p/DUPswELD2JZ/" },
+    { group: "기타", title: "호갱방지 팩폭타임 8탄",   tags: ["호갱방지","팩폭"],       thumbnail: "images/facpok/DQGr97-D2m_.jpg", link: "https://www.instagram.com/p/DQGr97-D2m_/" }
   ]
 };
