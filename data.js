@@ -282,7 +282,7 @@ const DATA = {
         { name: "멜라코지",  tags: ["멜라토닌", "수면"],           thumbnail: "images/products/prod_melacozy.jpg",  link: "https://www.instagram.com/p/DSmiqUMj8XX/" },
         { name: "베르베린",  tags: ["혈당", "다이어트", "인슐린"], thumbnail: "images/products/prod_berberin.jpg",  link: "https://www.instagram.com/p/DTC4fZXD0q7/" },
         { name: "보라물",    tags: ["안토시아닌", "눈건강"],       thumbnail: "images/products/prod_borawater.jpg", link: "https://www.instagram.com/p/DVnAFGhD6jD/" },
-        { name: "생리대",    tags: ["생리대", "여성"],             thumbnail: "images/products/prod_pad.jpg",       link: "https://www.instagram.com/p/DWNJg9BE7hF/" }
+        { name: "생리대",    tags: ["생리대", "여성"],             thumbnail: "images/products/prod_pad.jpg",       link: "https://www.instagram.com/p/DWWY9FPD06J/" }
       ]
     }
   ],
