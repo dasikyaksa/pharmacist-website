@@ -314,12 +314,13 @@ ul { list-style: none; }
    섹션 1: 공구 참여 전 필독
    ============================================= */
 #mustread {
-  background: var(--berry);
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
   padding: 48px 0;
   scroll-margin-top: var(--header-h);
 }
-#mustread .section-title { color: var(--white); }
-#mustread .section-sub   { color: rgba(255,255,255,0.6); }
+#mustread .section-title { color: var(--text); }
+#mustread .section-sub   { color: var(--text-muted); }
 
 .mustread-grid {
   display: grid;
@@ -328,8 +329,8 @@ ul { list-style: none; }
 }
 
 .mustread-card {
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.15);
+  background: var(--white);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
   cursor: pointer;
@@ -337,7 +338,7 @@ ul { list-style: none; }
 }
 .mustread-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+  box-shadow: var(--shadow-md);
 }
 .mustread-thumb {
   width: 100%;
@@ -350,13 +351,13 @@ ul { list-style: none; }
 .mustread-title {
   font-size: 13px;
   font-weight: 700;
-  color: var(--white);
+  color: var(--text);
   margin-bottom: 3px;
   line-height: 1.3;
 }
 .mustread-sub {
   font-size: 11px;
-  color: rgba(255,255,255,0.55);
+  color: var(--text-muted);
 }
 
 /* =============================================
