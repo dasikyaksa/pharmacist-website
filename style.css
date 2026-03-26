@@ -800,6 +800,58 @@ ul { list-style: none; }
 ::-webkit-scrollbar-thumb { background: var(--pink-mid); border-radius: 10px; }
 
 /* =============================================
+   캘린더 팝업
+   ============================================= */
+#cal-popup-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+#cal-popup-overlay.active { display: flex; }
+
+.cal-popup-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 24px 20px;
+  text-align: center;
+  max-width: 300px;
+  width: 88%;
+  box-shadow: 0 8px 32px rgba(0,0,0,.18);
+}
+.cal-popup-msg {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.cal-popup-close {
+  background: var(--pink-dark);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 9px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.cal-popup-close:hover { background: #c05a5a; }
+
+/* 링크 없는 캘린더 이벤트 버튼 기본 스타일 초기화 */
+button.cal-event {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+/* =============================================
    유틸리티
    ============================================= */
 .visually-hidden {

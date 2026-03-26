@@ -112,6 +112,40 @@ function renderCalendar(date) {
   }
 }
 
+/* 캘린더 제목 → 사용설명서 링크 매칭 */
+function getProductLink(calTitle) {
+  const title = calTitle.replace(/\s*예정[!！]?/, '').trim().toLowerCase();
+  for (const cat of DATA.productCategories) {
+    for (const p of cat.items) {
+      const name = p.name.toLowerCase();
+      if (title.includes(name) || name.includes(title)) {
+        return (p.link && p.link !== '#') ? p.link : null;
+      }
+    }
+  }
+  return null;
+}
+
+function showCalPopup(message) {
+  let overlay = document.getElementById('cal-popup-overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.id = 'cal-popup-overlay';
+    overlay.innerHTML = `
+      <div class="cal-popup-box">
+        <p class="cal-popup-msg"></p>
+        <button class="cal-popup-close">확인</button>
+      </div>`;
+    overlay.addEventListener('click', e => {
+      if (e.target === overlay || e.target.classList.contains('cal-popup-close'))
+        overlay.classList.remove('active');
+    });
+    document.body.appendChild(overlay);
+  }
+  overlay.querySelector('.cal-popup-msg').textContent = message;
+  overlay.classList.add('active');
+}
+
 function makeDayCell(dayNum, otherMonth, isToday, dow, events, _) {
   const cell = document.createElement('div');
   cell.className = 'cal-cell';
@@ -127,17 +161,24 @@ function makeDayCell(dayNum, otherMonth, isToday, dow, events, _) {
 
   if (events && events.length) {
     events.forEach(ev => {
-      const a = document.createElement('a');
-      a.className = 'cal-event';
-      a.href = ev.link;
-      a.target = '_blank';
-      a.rel = 'noopener';
-      a.title = `${ev.title} 공구 오픈 → 댓글에 "알림" 달기`;
-      a.innerHTML = `
+      const productLink = getProductLink(ev.title);
+      const btn = document.createElement(productLink ? 'a' : 'button');
+      btn.className = 'cal-event';
+      if (productLink) {
+        btn.href = productLink;
+        btn.target = '_blank';
+        btn.rel = 'noopener';
+      } else {
+        btn.type = 'button';
+        btn.addEventListener('click', () =>
+          showCalPopup('해당 제품은 상세보기와 사전알림이 불가합니다')
+        );
+      }
+      btn.innerHTML = `
         <img class="cal-event-thumb" src="${ev.thumbnail}" alt="${ev.title}" loading="lazy">
         <span class="cal-event-name">${ev.title}</span>
       `;
-      cell.appendChild(a);
+      cell.appendChild(btn);
     });
   }
 
