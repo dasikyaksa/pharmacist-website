@@ -160,13 +160,20 @@ document.addEventListener('DOMContentLoaded', () => {
    섹션 3: 사용설명서
 ────────────────────────────────────────── */
 function renderProducts() {
-  const grid = document.getElementById('products-grid');
-  grid.innerHTML = DATA.products.map(p => makeContentCard({
-    name:      p.name,
-    thumbnail: p.thumbnail,
-    link:      p.link,
-    tags:      p.tags
-  })).join('');
+  const container = document.getElementById('products-grid');
+  container.innerHTML = DATA.productCategories.map(cat => `
+    <div class="product-category">
+      <h3 class="product-category-title">${cat.category}</h3>
+      <div class="card-grid">
+        ${cat.items.map(p => makeContentCard({
+          name:      p.name,
+          thumbnail: p.thumbnail,
+          link:      p.link,
+          tags:      p.tags
+        })).join('')}
+      </div>
+    </div>
+  `).join('');
 }
 
 /* ──────────────────────────────────────────
@@ -232,10 +239,10 @@ function makeContentCard({ name, episode, thumbnail, link, tags }) {
 function buildSearchIndex() {
   const index = [];
 
-  DATA.products.forEach(p => index.push({
+  DATA.productCategories.forEach(cat => cat.items.forEach(p => index.push({
     name: p.name, thumbnail: p.thumbnail, link: p.link,
     tags: p.tags || [], section: '사용설명서'
-  }));
+  })));
 
   DATA.facpok.forEach(f => index.push({
     name: `${f.title} ${f.episode}`, thumbnail: f.thumbnail, link: f.link,

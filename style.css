@@ -516,6 +516,25 @@ ul { list-style: none; }
   scroll-margin-top: var(--header-h);
 }
 
+/* 카테고리 블록 */
+.product-category {
+  margin-bottom: 40px;
+}
+.product-category:last-child {
+  margin-bottom: 0;
+}
+.product-category-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary);
+  background: var(--pink-light);
+  border-left: 4px solid var(--primary);
+  padding: 8px 14px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 16px;
+  letter-spacing: -0.3px;
+}
+
 /* =============================================
    섹션 4: 팩폭 시리즈
    ============================================= */

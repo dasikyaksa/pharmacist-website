@@ -226,80 +226,67 @@ const DATA = {
 
   // ──────────────────────────────────────────────
   // 섹션 3: 공구제품 사용설명서 몰아보기
-  // 제품별 최근 마감이벤트 피드 링크
+  // 카테고리별로 정리 — thumbnail/link는 나중에 채워주세요
   // ──────────────────────────────────────────────
-  products: [
+  productCategories: [
     {
-      name: "빌베리",
-      tags: ["루테인", "아스타잔틴", "눈건강"],
-      thumbnail: "https://placehold.co/400x400/FFB3C6/FFFFFF?text=빌베리",
-      link: "https://www.instagram.com/p/PRODUCT1/"
+      category: "박약다식 제품",
+      items: [
+        { name: "비타민D",    tags: ["비타민D", "면역", "뼈건강"],       thumbnail: "https://placehold.co/400x400/ffc2c2/FFFFFF?text=비타민D",    link: "#" },
+        { name: "여드름영양제", tags: ["여드름", "피부", "영양제"],       thumbnail: "https://placehold.co/400x400/ffc2c2/FFFFFF?text=여드름영양제", link: "#" }
+      ]
     },
     {
-      name: "여성유산균",
-      tags: ["질유산균", "람노퓨어", "여성건강"],
-      thumbnail: "https://placehold.co/400x400/FF8FAB/FFFFFF?text=여성유산균",
-      link: "https://www.instagram.com/p/PRODUCT2/"
+      category: "오메가3",
+      items: [
+        { name: "오메안비려유",      tags: ["오메가3", "알티지", "혈관"],  thumbnail: "https://placehold.co/400x400/ffd6d6/FFFFFF?text=오메안비려유",  link: "#" },
+        { name: "오메가미니",        tags: ["오메가3", "소형", "혈관"],    thumbnail: "https://placehold.co/400x400/ffd6d6/FFFFFF?text=오메가미니",    link: "#" },
+        { name: "오메츄",            tags: ["오메가3", "젤리", "어린이"],  thumbnail: "https://placehold.co/400x400/ffd6d6/FFFFFF?text=오메츄",        link: "#" },
+        { name: "필더데이 오메가",   tags: ["오메가3", "필더데이"],        thumbnail: "https://placehold.co/400x400/ffd6d6/FFFFFF?text=필더데이오메가", link: "#" }
+      ]
     },
     {
-      name: "오메가 미니",
-      tags: ["오메가3", "알티지", "혈관"],
-      thumbnail: "https://placehold.co/400x400/FF6B9D/FFFFFF?text=오메가미니",
-      link: "https://www.instagram.com/p/PRODUCT3/"
+      category: "유산균",
+      items: [
+        { name: "분홍이",    tags: ["유산균", "프로바이오틱스", "장건강"], thumbnail: "https://placehold.co/400x400/ffb3b3/FFFFFF?text=분홍이",    link: "#" },
+        { name: "초록이",    tags: ["유산균", "프리바이오틱스"],           thumbnail: "https://placehold.co/400x400/ffb3b3/FFFFFF?text=초록이",    link: "#" },
+        { name: "노랑이",    tags: ["유산균", "장건강"],                   thumbnail: "https://placehold.co/400x400/ffb3b3/FFFFFF?text=노랑이",    link: "#" },
+        { name: "여성유산균", tags: ["유산균", "질유산균", "여성건강"],    thumbnail: "https://placehold.co/400x400/ffb3b3/FFFFFF?text=여성유산균", link: "#" }
+      ]
     },
     {
-      name: "마그네슘",
-      tags: ["마그샷", "수면", "근육"],
-      thumbnail: "https://placehold.co/400x400/F06292/FFFFFF?text=마그네슘",
-      link: "https://www.instagram.com/p/PRODUCT4/"
+      category: "미네랄",
+      items: [
+        { name: "마그샷",           tags: ["마그네슘", "수면", "근육"],    thumbnail: "https://placehold.co/400x400/f5a0a0/FFFFFF?text=마그샷",          link: "#" },
+        { name: "갓성비 산화마그네슘", tags: ["마그네슘", "변비", "성비"], thumbnail: "https://placehold.co/400x400/f5a0a0/FFFFFF?text=산화마그네슘",    link: "#" },
+        { name: "칼마디K2",         tags: ["칼슘", "마그네슘", "비타민K2"], thumbnail: "https://placehold.co/400x400/f5a0a0/FFFFFF?text=칼마디K2",      link: "#" },
+        { name: "풍선껌맛 철분",    tags: ["철분", "빈혈", "피로"],        thumbnail: "https://placehold.co/400x400/f5a0a0/FFFFFF?text=풍선껌맛철분",   link: "#" }
+      ]
     },
     {
-      name: "베르베린",
-      tags: ["혈당", "다이어트", "인슐린"],
-      thumbnail: "https://placehold.co/400x400/EC407A/FFFFFF?text=베르베린",
-      link: "https://www.instagram.com/p/PRODUCT5/"
+      category: "화장품",
+      items: [
+        { name: "바쿠치올",          tags: ["바쿠치올", "스킨케어", "노화"], thumbnail: "https://placehold.co/400x400/d66f6f/FFFFFF?text=바쿠치올",      link: "#" },
+        { name: "팜트리 수분진정라인", tags: ["수분", "진정", "화장품"],    thumbnail: "https://placehold.co/400x400/d66f6f/FFFFFF?text=팜트리수분진정", link: "#" },
+        { name: "VT 리들샷",         tags: ["리들샷", "VT", "피부재생"],   thumbnail: "https://placehold.co/400x400/d66f6f/FFFFFF?text=VT리들샷",       link: "#" }
+      ]
     },
     {
-      name: "분홍이",
-      tags: ["프리미엄유산균", "프로바이오틱스", "장건강"],
-      thumbnail: "https://placehold.co/400x400/E91E8C/FFFFFF?text=분홍이",
-      link: "https://www.instagram.com/p/PRODUCT6/"
-    },
-    {
-      name: "큐로세틴",
-      tags: ["퀘르세틴", "항산화", "염증"],
-      thumbnail: "https://placehold.co/400x400/FF4081/FFFFFF?text=큐로세틴",
-      link: "https://www.instagram.com/p/PRODUCT7/"
-    },
-    {
-      name: "이노시톨",
-      tags: ["PCOS", "호르몬", "여성"],
-      thumbnail: "https://placehold.co/400x400/F50057/FFFFFF?text=이노시톨",
-      link: "https://www.instagram.com/p/PRODUCT8/"
-    },
-    {
-      name: "디오스민",
-      tags: ["붓기", "혈관", "정맥"],
-      thumbnail: "https://placehold.co/400x400/FF80AB/FFFFFF?text=디오스민",
-      link: "https://www.instagram.com/p/PRODUCT9/"
-    },
-    {
-      name: "비타민D",
-      tags: ["뼈건강", "면역", "햇빛"],
-      thumbnail: "https://placehold.co/400x400/FFAB91/FFFFFF?text=비타민D",
-      link: "https://www.instagram.com/p/PRODUCT10/"
-    },
-    {
-      name: "철분",
-      tags: ["빈혈", "피로", "헤모글로빈"],
-      thumbnail: "https://placehold.co/400x400/FF7043/FFFFFF?text=철분",
-      link: "https://www.instagram.com/p/PRODUCT11/"
-    },
-    {
-      name: "루아빌",
-      tags: ["루테인", "아스타잔틴", "눈"],
-      thumbnail: "https://placehold.co/400x400/FF8A65/FFFFFF?text=루아빌",
-      link: "https://www.instagram.com/p/PRODUCT12/"
+      category: "기타",
+      items: [
+        { name: "큐로세틴",    tags: ["퀘르세틴", "항산화", "염증"],   thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=큐로세틴",    link: "#" },
+        { name: "디오시민",    tags: ["디오스민", "붓기", "혈관"],      thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=디오시민",    link: "#" },
+        { name: "루아빌",      tags: ["루테인", "아스타잔틴", "눈"],    thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=루아빌",      link: "#" },
+        { name: "이노시톨",    tags: ["PCOS", "호르몬", "여성"],        thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=이노시톨",    link: "#" },
+        { name: "니코틴산아미드", tags: ["나이아신", "피부", "에너지"], thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=니코틴산아미드", link: "#" },
+        { name: "아미노콤",    tags: ["아미노산", "근육", "운동"],      thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=아미노콤",    link: "#" },
+        { name: "멜라코지",    tags: ["멜라토닌", "수면"],              thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=멜라코지",    link: "#" },
+        { name: "베르베린",    tags: ["혈당", "다이어트", "인슐린"],    thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=베르베린",    link: "#" },
+        { name: "보라물",      tags: ["안토시아닌", "눈건강"],          thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=보라물",      link: "#" },
+        { name: "올리브오일",  tags: ["올리브", "오일", "항산화"],      thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=올리브오일",  link: "#" },
+        { name: "생리대",      tags: ["생리대", "여성"],                 thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=생리대",      link: "#" },
+        { name: "피크노제놀",  tags: ["피크노제놀", "항산화", "혈관"],  thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=피크노제놀",  link: "#" }
+      ]
     }
   ],
 
