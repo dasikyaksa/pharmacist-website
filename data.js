@@ -292,69 +292,26 @@ const DATA = {
   // 시리즈별로 그룹 묶기 가능 (group 필드)
   // ──────────────────────────────────────────────
   facpok: [
-    {
-      title: "비타민C 팩폭",
-      episode: "1편",
-      group: "비타민C",
-      tags: ["비타민C", "항산화"],
-      thumbnail: "https://placehold.co/400x400/FF8FAB/FFFFFF?text=비타민C+1편",
-      link: "https://www.instagram.com/p/FACPOK1/"
-    },
-    {
-      title: "비타민C 팩폭",
-      episode: "2편",
-      group: "비타민C",
-      tags: ["비타민C", "항산화"],
-      thumbnail: "https://placehold.co/400x400/FF6B9D/FFFFFF?text=비타민C+2편",
-      link: "https://www.instagram.com/p/FACPOK2/"
-    },
-    {
-      title: "비타민C 팩폭",
-      episode: "3편",
-      group: "비타민C",
-      tags: ["비타민C", "항산화"],
-      thumbnail: "https://placehold.co/400x400/F06292/FFFFFF?text=비타민C+3편",
-      link: "https://www.instagram.com/p/FACPOK3/"
-    },
-    {
-      title: "오메가3 팩폭",
-      episode: "1편",
-      group: "오메가3",
-      tags: ["오메가3", "혈관", "중성지방"],
-      thumbnail: "https://placehold.co/400x400/FF80AB/FFFFFF?text=오메가3+1편",
-      link: "https://www.instagram.com/p/FACPOK4/"
-    },
-    {
-      title: "오메가3 팩폭",
-      episode: "2편",
-      group: "오메가3",
-      tags: ["오메가3", "혈관"],
-      thumbnail: "https://placehold.co/400x400/FF4081/FFFFFF?text=오메가3+2편",
-      link: "https://www.instagram.com/p/FACPOK5/"
-    },
-    {
-      title: "유산균 팩폭",
-      episode: "1편",
-      group: "유산균",
-      tags: ["유산균", "장건강", "프로바이오틱스"],
-      thumbnail: "https://placehold.co/400x400/E91E8C/FFFFFF?text=유산균+1편",
-      link: "https://www.instagram.com/p/FACPOK6/"
-    },
-    {
-      title: "유산균 팩폭",
-      episode: "2편",
-      group: "유산균",
-      tags: ["유산균", "장건강"],
-      thumbnail: "https://placehold.co/400x400/C2185B/FFFFFF?text=유산균+2편",
-      link: "https://www.instagram.com/p/FACPOK7/"
-    },
-    {
-      title: "마그네슘 팩폭",
-      episode: "1편",
-      group: "마그네슘",
-      tags: ["마그네슘", "수면", "근육이완"],
-      thumbnail: "https://placehold.co/400x400/AD1457/FFFFFF?text=마그네슘+1편",
-      link: "https://www.instagram.com/p/FACPOK8/"
-    }
+    // ── 비타민D ──
+    { group: "비타민D", title: "비타민D+K2 논란 종결",   tags: ["비타민D","K2","논란"],    thumbnail: "images/facpok/DVI9vVej9B2.jpg", link: "https://www.instagram.com/p/DVI9vVej9B2/" },
+    { group: "비타민D", title: "비타민D K2 없어도 될까?", tags: ["비타민D","K2"],           thumbnail: "images/facpok/DOno6QVDzSt.jpg", link: "https://www.instagram.com/p/DOno6QVDzSt/" },
+    // ── 오메가3 ──
+    { group: "오메가3", title: "오메가3 팩폭 12탄",       tags: ["오메가3","팩폭","혈관"],  thumbnail: "images/facpok/DTxEE7Tj0_U.jpg", link: "https://www.instagram.com/p/DTxEE7Tj0_U/" },
+    // ── 유산균 ──
+    { group: "유산균", title: "질유산균 팩폭",            tags: ["질유산균","팩폭"],        thumbnail: "images/facpok/DOZzFRej_F6.jpg", link: "https://www.instagram.com/p/DOZzFRej_F6/" },
+    { group: "유산균", title: "질유산균 논란 정리",       tags: ["질유산균","논란"],        thumbnail: "images/facpok/DWJkn8KD_fw.jpg", link: "https://www.instagram.com/p/DWJkn8KD_fw/" },
+    // ── 영양제 팩폭 ──
+    { group: "영양제 팩폭", title: "팩폭 시리즈 안내 & 2025 최악의 영양제", tags: ["팩폭","영양제"],    thumbnail: "images/facpok/DS5tnFtEx-8.jpg", link: "https://www.instagram.com/p/DS5tnFtEx-8/" },
+    { group: "영양제 팩폭", title: "알부민 팩폭",          tags: ["알부민","팩폭"],          thumbnail: "images/facpok/DQ0ogvCD8eF.jpg", link: "https://www.instagram.com/p/DQ0ogvCD8eF/" },
+    { group: "영양제 팩폭", title: "호갱방지 팩폭타임 8탄", tags: ["호갱방지","팩폭"],       thumbnail: "images/facpok/DQGr97-D2m_.jpg", link: "https://www.instagram.com/p/DQGr97-D2m_/" },
+    { group: "영양제 팩폭", title: "호갱방지 팩폭타임",    tags: ["호갱방지","팩폭"],        thumbnail: "images/facpok/DN981i2j1fe.jpg", link: "https://www.instagram.com/p/DN981i2j1fe/" },
+    { group: "영양제 팩폭", title: "흡수율 팩폭",          tags: ["흡수율","팩폭"],          thumbnail: "images/facpok/DK2B0Aivu4c.jpg", link: "https://www.instagram.com/p/DK2B0Aivu4c/" },
+    // ── 약국 꿀팁 ──
+    { group: "약국 꿀팁", title: "약사들만 아는 솔직 꿀팁", tags: ["약국","꿀팁","절약"],   thumbnail: "images/facpok/DUlAQuCjzLz.jpg", link: "https://www.instagram.com/p/DUlAQuCjzLz/" },
+    { group: "약국 꿀팁", title: "파란안약 팩폭",          tags: ["안약","눈"],              thumbnail: "images/facpok/DUPswELD2JZ.jpg", link: "https://www.instagram.com/p/DUPswELD2JZ/" },
+    { group: "약국 꿀팁", title: "사지마템 5가지",         tags: ["사지마템","약국"],        thumbnail: "images/facpok/DTue1QUj6K8.jpg", link: "https://www.instagram.com/p/DTue1QUj6K8/" },
+    { group: "약국 꿀팁", title: "흉터약 점수 매기기",     tags: ["흉터","약국","점수"],     thumbnail: "images/facpok/DVrh4yizzpk.jpg", link: "https://www.instagram.com/p/DVrh4yizzpk/" },
+    { group: "약국 꿀팁", title: "피임약 발암물질 논란",   tags: ["피임약","발암"],          thumbnail: "images/facpok/DWSV3rpk7oG.jpg", link: "https://www.instagram.com/p/DWSV3rpk7oG/" },
+    { group: "약국 꿀팁", title: "빌베리 영양제 이슈",     tags: ["빌베리","보라물"],        thumbnail: "images/facpok/DVhf_Vwj4cT.jpg", link: "https://www.instagram.com/p/DVhf_Vwj4cT/" }
   ]
 };
