@@ -12,7 +12,7 @@ const DATA = {
   // 프로필
   // ──────────────────────────────────────────────
   profile: {
-    photo: "images/profile.jpg",           // ← 프로필 사진 파일을 images/ 폴더에 넣어주세요
+    photo: "images/profile.png",           // ← 프로필 사진 파일을 images/ 폴더에 넣어주세요
     instagramUrl: "https://www.instagram.com/pharm_baksoyun/",  // ← 인스타 주소
   },
 

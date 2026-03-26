@@ -156,10 +156,9 @@ ul { list-style: none; }
   flex-shrink: 0;
   width: 150px;
   height: 200px;
-  border-radius: 16px;
-  overflow: hidden;
-  background: var(--pink-light);
-  box-shadow: 0 4px 16px rgba(214,111,111,.15);
+  border-radius: 0;
+  overflow: visible;
+  background: transparent;
 }
 .profile-photo-wrap img {
   width: 100%;
