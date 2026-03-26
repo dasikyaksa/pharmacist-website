@@ -516,6 +516,29 @@ ul { list-style: none; }
   scroll-margin-top: var(--header-h);
 }
 
+/* 알림 콜아웃 */
+.manual-callout {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border-left: 4px solid var(--pink-dark);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 12px 18px;
+  margin-bottom: 28px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--pink-dark);
+  box-shadow: 0 2px 8px rgba(214,111,111,.12);
+}
+.manual-callout strong {
+  background: var(--pink-dark);
+  color: #fff;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-weight: 800;
+}
+
 /* 카테고리 블록 */
 .product-category {
   margin-bottom: 32px;
