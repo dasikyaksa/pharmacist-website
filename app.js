@@ -162,8 +162,8 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderProducts() {
   const container = document.getElementById('products-grid');
   container.innerHTML = DATA.productCategories.map(cat => `
-    <div class="product-category">
-      <h3 class="product-category-title"># ${cat.category}</h3>
+    <div class="facpok-group">
+      <span class="facpok-group-title"># ${cat.category}</span>
       <div class="product-card-grid">
         ${cat.items.map(p => makeContentCard({
           name:      p.name,

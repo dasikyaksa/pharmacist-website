@@ -239,9 +239,9 @@ const DATA = {
     {
       category: "오메가3",
       items: [
-        { name: "오메안비려유",    tags: ["오메가3", "알티지", "혈관"],  thumbnail: "images/products/prod_omegabig.jpg",          link: "https://www.instagram.com/p/DUmLGgHE16J/" },
+        { name: "오메안비려유",    tags: ["오메가3", "알티지", "혈관"],  thumbnail: "images/products/prod_omegabig.jpg",          link: "https://www.instagram.com/p/DTz6RsFj6OG/" },
         { name: "오메가미니",      tags: ["오메가3", "소형", "혈관"],    thumbnail: "https://placehold.co/400x400/ffd6d6/FFFFFF?text=오메가미니",    link: "#" },
-        { name: "오메츄",          tags: ["오메가3", "젤리", "어린이"],  thumbnail: "images/products/prod_omegachew.jpg",         link: "https://www.instagram.com/reel/DVmYua5Tzdb/" },
+        { name: "오메츄",          tags: ["오메가3", "젤리", "어린이"],  thumbnail: "images/products/prod_omegachew.jpg",         link: "https://www.instagram.com/p/DSudvtICeDN/" },
         { name: "필더데이 오메가", tags: ["오메가3", "필더데이"],        thumbnail: "https://placehold.co/400x400/ffd6d6/FFFFFF?text=필더데이오메가", link: "#" }
       ]
     },
@@ -274,18 +274,15 @@ const DATA = {
     {
       category: "기타",
       items: [
-        { name: "큐로세틴",    tags: ["퀘르세틴", "항산화", "염증"],    thumbnail: "images/products/prod_quercetin.jpg",         link: "https://www.instagram.com/p/DUz4sz3D6MR/" },
-        { name: "디오시민",    tags: ["디오스민", "붓기", "혈관"],       thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=디오시민",   link: "#" },
-        { name: "루아빌",      tags: ["루테인", "아스타잔틴", "눈"],     thumbnail: "images/products/prod_luabill.jpg",           link: "https://www.instagram.com/p/DWVE1g_D2F8/" },
-        { name: "이노시톨",    tags: ["PCOS", "호르몬", "여성"],         thumbnail: "images/products/prod_inositol.jpg",          link: "https://www.instagram.com/p/DVaVQR4D3gE/" },
-        { name: "니코틴산아미드", tags: ["나이아신", "피부", "에너지"], thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=니코틴산아미드", link: "#" },
-        { name: "아미노콤",    tags: ["아미노산", "근육", "운동"],       thumbnail: "images/products/prod_aminocom.jpg",          link: "https://www.instagram.com/p/DVqPezADyrE/" },
-        { name: "멜라코지",    tags: ["멜라토닌", "수면"],               thumbnail: "images/products/prod_melacozy.jpg",          link: "https://www.instagram.com/p/DSmiqUMj8XX/" },
-        { name: "베르베린",    tags: ["혈당", "다이어트", "인슐린"],     thumbnail: "images/products/prod_berberin.jpg",          link: "https://www.instagram.com/p/DTC4fZXD0q7/" },
-        { name: "보라물",      tags: ["안토시아닌", "눈건강"],           thumbnail: "images/products/prod_borawater.jpg",         link: "https://www.instagram.com/p/DVnAFGhD6jD/" },
-        { name: "올리브오일",  tags: ["올리브", "오일", "항산화"],       thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=올리브오일",  link: "#" },
-        { name: "생리대",      tags: ["생리대", "여성"],                  thumbnail: "images/products/prod_pad.jpg",               link: "https://www.instagram.com/p/DWNJg9BE7hF/" },
-        { name: "피크노제놀",  tags: ["피크노제놀", "항산화", "혈관"],   thumbnail: "https://placehold.co/400x400/e89090/FFFFFF?text=피크노제놀",  link: "#" }
+        { name: "큐로세틴",  tags: ["퀘르세틴", "항산화", "염증"],  thumbnail: "images/products/prod_quercetin.jpg", link: "https://www.instagram.com/p/DUz4sz3D6MR/" },
+        { name: "디오스민",  tags: ["디오스민", "붓기", "혈관"],   thumbnail: "images/products/prod_diosmin.jpg",   link: "https://www.instagram.com/p/DUXGFyWjy00/" },
+        { name: "루아빌",    tags: ["루테인", "아스타잔틴", "눈"], thumbnail: "images/products/prod_luabill.jpg",   link: "https://www.instagram.com/p/DWVE1g_D2F8/" },
+        { name: "이노시톨",  tags: ["PCOS", "호르몬", "여성"],     thumbnail: "images/products/prod_inositol.jpg",  link: "https://www.instagram.com/p/DVaVQR4D3gE/" },
+        { name: "아미노콤",  tags: ["아미노산", "근육", "운동"],   thumbnail: "images/products/prod_aminocom.jpg",  link: "https://www.instagram.com/p/DVqPezADyrE/" },
+        { name: "멜라코지",  tags: ["멜라토닌", "수면"],           thumbnail: "images/products/prod_melacozy.jpg",  link: "https://www.instagram.com/p/DSmiqUMj8XX/" },
+        { name: "베르베린",  tags: ["혈당", "다이어트", "인슐린"], thumbnail: "images/products/prod_berberin.jpg",  link: "https://www.instagram.com/p/DTC4fZXD0q7/" },
+        { name: "보라물",    tags: ["안토시아닌", "눈건강"],       thumbnail: "images/products/prod_borawater.jpg", link: "https://www.instagram.com/p/DVnAFGhD6jD/" },
+        { name: "생리대",    tags: ["생리대", "여성"],             thumbnail: "images/products/prod_pad.jpg",       link: "https://www.instagram.com/p/DWNJg9BE7hF/" }
       ]
     }
   ],
