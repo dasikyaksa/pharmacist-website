@@ -2,20 +2,29 @@
    박약다식 한 눈에 보기 — 스타일시트
    ============================================= */
 
+/* ── 강원교육모두 폰트 ── */
+@font-face {
+  font-family: 'GangwonEdu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206@1.0/GangwonEdu_OTFBoldA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ── 색상/변수 ── */
 :root {
-  --pink-pale:   #FFF0F5;
-  --pink-light:  #FCE4EC;
-  --pink-mid:    #FF8FAB;
-  --pink-main:   #FF6B9D;
-  --pink-dark:   #C2185B;
-  --berry:       #7B1A4E;
-  --berry-mid:   #9C2262;
+  --pink-pale:   #fff5f5;
+  --pink-light:  #ffe8e8;
+  --pink-mid:    #ffc2c2;
+  --pink-main:   #eda0a0;
+  --pink-dark:   #d66f6f;
+  --berry:       #7a3030;
+  --berry-mid:   #9e4545;
   --white:       #FFFFFF;
-  --text:        #1E1E2E;
-  --text-soft:   #555;
-  --text-muted:  #999;
-  --border:      #FFD6E7;
+  --text:        #3d1f1f;
+  --text-soft:   #7a5050;
+  --text-muted:  #bba8a8;
+  --border:      #ffd6d6;
   --shadow-sm:   0 2px 12px rgba(255,107,157,0.10);
   --shadow-md:   0 6px 24px rgba(255,107,157,0.18);
   --shadow-lg:   0 12px 40px rgba(255,107,157,0.22);
@@ -29,7 +38,7 @@
 /* ── 리셋 ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'GangwonEdu', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color: var(--text);
   background: var(--white);
   line-height: 1.65;
