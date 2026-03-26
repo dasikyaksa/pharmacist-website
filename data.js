@@ -23,13 +23,13 @@ const DATA = {
     {
       title: "구매 전 상담",
       subtitle: "",
-      thumbnail: "https://scontent-icn2-1.cdninstagram.com/v/t51.75761-15/475493694_17989571768786293_3121752464811444996_n.jpg?stp=c264.0.792.792a_dst-jpg_e35_s640x640_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=buwBlMpvNZcQ7kNvwE1HNpn&_nc_oc=AdqPst_U6Yyy-Bawjf32l5PHhb6OhJ6bMn4IbkT_cqZFHTOHnwqfv5HIjGBWwSgXghM&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&oh=00_Afw3Fx2Vz-xoqfuaCs1GuWa45LnEME1zHUUEMl7Sj1w2CQ&oe=69CAD3E4",
+      thumbnail: "images/mustread1.jpg",
       link: "https://www.instagram.com/p/DFbYAOATe_W/?img_index=8"
     },
     {
       title: "구매 후 상담",
       subtitle: "",
-      thumbnail: "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652130841_18037821950786293_6447323084132641538_n.jpg?stp=c264.0.792.792a_dst-jpg_e35_s640x640_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=dgHWu7uv0fwQ7kNvwEgem4H&_nc_oc=AdoIk5YfwGZ1XHGWvnPPTU-IQfm55uZWYxj9THnIWIUrMeeVjsCmSZXziTJMc40TQ3w&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&oh=00_AfziJx1qwWR0FfzrHf61g88R3EmggAthAkwMvaDZDgef3g&oe=69CADFFA",
+      thumbnail: "images/mustread2.jpg",
       link: "https://www.instagram.com/p/DV-VrVVj5mf/?img_index=1"
     }
   ],
