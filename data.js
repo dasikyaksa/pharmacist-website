@@ -248,9 +248,9 @@ const DATA = {
     {
       category: "유산균",
       items: [
-        { name: "분홍이",    tags: ["유산균", "프로바이오틱스", "장건강"], thumbnail: "images/products/prod_pink.jpg",             link: "https://www.instagram.com/p/DVR9gqzk5qe/" },
-        { name: "초록이",    tags: ["유산균", "프리바이오틱스"],           thumbnail: "images/products/prod_pink.jpg",             link: "https://www.instagram.com/p/DVR9gqzk5qe/" },
-        { name: "노랑이",    tags: ["유산균", "장건강"],                   thumbnail: "images/products/prod_pink.jpg",             link: "https://www.instagram.com/p/DVR9gqzk5qe/" },
+        { name: "분홍이",    tags: ["유산균", "프로바이오틱스", "장건강"], thumbnail: "images/products/prod_pink.jpg",             link: "https://www.instagram.com/p/DT651hjj9LO/" },
+        { name: "초록이",    tags: ["유산균", "프리바이오틱스"],           thumbnail: "images/products/prod_pink.jpg",             link: "https://www.instagram.com/p/DT651hjj9LO/" },
+        { name: "노랑이",    tags: ["유산균", "장건강"],                   thumbnail: "images/products/prod_pink.jpg",             link: "https://www.instagram.com/p/DT651hjj9LO/" },
         { name: "여성유산균", tags: ["유산균", "질유산균", "여성건강"],   thumbnail: "images/products/prod_femlab.jpg",            link: "https://www.instagram.com/p/DWIPE6ijweB/" }
       ]
     },
