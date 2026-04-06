@@ -1,0 +1,36 @@
+name: 캘린더 자동 업데이트
+
+on:
+  schedule:
+    # 매일 오전 8시 KST = 23:00 UTC
+    - cron: '0 23 * * *'
+  workflow_dispatch:   # 수동 실행 버튼도 추가
+
+jobs:
+  update-calendar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 레포 체크아웃
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install icalendar requests -q
+
+      - name: 캘린더 업데이트
+        run: python build_calendar.py
+
+      - name: 변경사항 커밋 & 푸시
+        run: |
+          git config user.name "dasikyaksa"
+          git config user.email "1223soyun@gmail.com"
+          git add data.js
+          git diff --staged --quiet || git commit -m "캘린더 자동 업데이트 ($(date '+%Y-%m-%d'))"
+          git push
