@@ -223,17 +223,17 @@ const DATA = {
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
-        "title": "비타민D",
-        "start": "2026-07-07",
-        "end": "2026-07-13",
-        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%B9%84%ED%83%80%EB%AF%BCD",
-        "link": "https://www.instagram.com/pharm_baksoyun/"
-    },
-    {
         "title": "철분",
         "start": "2026-07-07",
         "end": "2026-07-13",
         "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%B2%A0%EB%B6%84",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "비타민D",
+        "start": "2026-07-07",
+        "end": "2026-07-13",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%B9%84%ED%83%80%EB%AF%BCD",
         "link": "https://www.instagram.com/pharm_baksoyun/"
     }
 ],
