@@ -41,13 +41,6 @@ const DATA = {
   // ──────────────────────────────────────────────
   calendar: [
     {
-        "title": "큐로세틴",
-        "start": "2026-03-31",
-        "end": "2026-04-06",
-        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%ED%81%90%EB%A1%9C%EC%84%B8%ED%8B%B4",
-        "link": "https://www.instagram.com/pharm_baksoyun/"
-    },
-    {
         "title": "분홍이",
         "start": "2026-04-06",
         "end": "2026-04-08",
@@ -167,6 +160,13 @@ const DATA = {
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
+        "title": "팜트리",
+        "start": "2026-06-04",
+        "end": "2026-06-10",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%ED%8C%9C%ED%8A%B8%EB%A6%AC",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
         "title": "쏙앤쏙",
         "start": "2026-06-09",
         "end": "2026-06-15",
@@ -223,6 +223,13 @@ const DATA = {
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
+        "title": "철분",
+        "start": "2026-07-07",
+        "end": "2026-07-13",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%B2%A0%EB%B6%84",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
         "title": "비타민D",
         "start": "2026-07-07",
         "end": "2026-07-13",
@@ -230,10 +237,10 @@ const DATA = {
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
-        "title": "철분",
-        "start": "2026-07-07",
-        "end": "2026-07-13",
-        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%B2%A0%EB%B6%84",
+        "title": "아연",
+        "start": "2026-07-14",
+        "end": "2026-07-20",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%95%84%EC%97%B0",
         "link": "https://www.instagram.com/pharm_baksoyun/"
     }
 ],
