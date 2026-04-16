@@ -90,17 +90,17 @@ const DATA = {
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
-        "title": "사장님 off",
-        "start": "2026-05-01",
-        "end": "2026-05-09",
-        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%82%AC%EC%9E%A5%EB%8B%98%20off",
-        "link": "https://www.instagram.com/pharm_baksoyun/"
-    },
-    {
         "title": "오메가3 미니",
         "start": "2026-05-01",
         "end": "2026-05-07",
         "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%98%A4%EB%A9%94%EA%B0%803%20%EB%AF%B8%EB%8B%88",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "사장님 off",
+        "start": "2026-05-01",
+        "end": "2026-05-09",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%82%AC%EC%9E%A5%EB%8B%98%20off",
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
@@ -223,17 +223,17 @@ const DATA = {
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
-        "title": "철분",
-        "start": "2026-07-07",
-        "end": "2026-07-13",
-        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%B2%A0%EB%B6%84",
-        "link": "https://www.instagram.com/pharm_baksoyun/"
-    },
-    {
         "title": "비타민D",
         "start": "2026-07-07",
         "end": "2026-07-13",
         "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%B9%84%ED%83%80%EB%AF%BCD",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "철분",
+        "start": "2026-07-07",
+        "end": "2026-07-13",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%B2%A0%EB%B6%84",
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
