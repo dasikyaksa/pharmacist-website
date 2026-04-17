@@ -41,13 +41,6 @@ const DATA = {
   // ──────────────────────────────────────────────
   calendar: [
     {
-        "title": "분홍이",
-        "start": "2026-04-06",
-        "end": "2026-04-08",
-        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%B6%84%ED%99%8D%EC%9D%B4",
-        "link": "https://www.instagram.com/pharm_baksoyun/"
-    },
-    {
         "title": "비타민D 예정!",
         "start": "2026-04-09",
         "end": "2026-04-15",
@@ -146,6 +139,13 @@ const DATA = {
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
+        "title": "씨오레 공구",
+        "start": "2026-05-26",
+        "end": "2026-06-01",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%94%A8%EC%98%A4%EB%A0%88%20%EA%B3%B5%EA%B5%AC",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
         "title": "노랑이",
         "start": "2026-05-28",
         "end": "2026-06-03",
@@ -241,6 +241,13 @@ const DATA = {
         "start": "2026-07-14",
         "end": "2026-07-20",
         "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%95%84%EC%97%B0",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "니코틴산아미드",
+        "start": "2026-07-16",
+        "end": "2026-07-22",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%8B%88%EC%BD%94%ED%8B%B4%EC%82%B0%EC%95%84%EB%AF%B8%EB%93%9C",
         "link": "https://www.instagram.com/pharm_baksoyun/"
     }
 ],
