@@ -83,17 +83,17 @@ const DATA = {
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
-        "title": "사장님 off",
-        "start": "2026-05-01",
-        "end": "2026-05-09",
-        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%82%AC%EC%9E%A5%EB%8B%98%20off",
-        "link": "https://www.instagram.com/pharm_baksoyun/"
-    },
-    {
         "title": "오메가3 미니",
         "start": "2026-05-01",
         "end": "2026-05-07",
         "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%98%A4%EB%A9%94%EA%B0%803%20%EB%AF%B8%EB%8B%88",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "사장님 off",
+        "start": "2026-05-01",
+        "end": "2026-05-09",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%82%AC%EC%9E%A5%EB%8B%98%20off",
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
@@ -132,17 +132,17 @@ const DATA = {
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
-        "title": "바쿠치올",
-        "start": "2026-05-26",
-        "end": "2026-06-01",
-        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%B0%94%EC%BF%A0%EC%B9%98%EC%98%AC",
-        "link": "https://www.instagram.com/pharm_baksoyun/"
-    },
-    {
         "title": "씨오레 공구",
         "start": "2026-05-26",
         "end": "2026-06-01",
         "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%94%A8%EC%98%A4%EB%A0%88%20%EA%B3%B5%EA%B5%AC",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "바쿠치올",
+        "start": "2026-05-26",
+        "end": "2026-06-01",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%B0%94%EC%BF%A0%EC%B9%98%EC%98%AC",
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
@@ -230,17 +230,24 @@ const DATA = {
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
+        "title": "디오스민",
+        "start": "2026-07-09",
+        "end": "2026-07-15",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%94%94%EC%98%A4%EC%8A%A4%EB%AF%BC",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
         "title": "철분",
-        "start": "2026-07-07",
-        "end": "2026-07-13",
+        "start": "2026-07-09",
+        "end": "2026-07-15",
         "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%B2%A0%EB%B6%84",
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
-        "title": "아연",
+        "title": "오메안비려유",
         "start": "2026-07-14",
         "end": "2026-07-20",
-        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%95%84%EC%97%B0",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%98%A4%EB%A9%94%EC%95%88%EB%B9%84%EB%A0%A4%EC%9C%A0",
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
