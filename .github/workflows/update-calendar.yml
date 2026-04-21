@@ -1,13 +1,13 @@
-name: 캘린더 자동 업데이트
+name: 매주 월요일 자동 업데이트
 
 on:
   schedule:
     # 매주 월요일 오전 9시 KST = 00:00 UTC (월요일)
     - cron: '0 0 * * 1'
-  workflow_dispatch:   # 수동 실행 버튼도 추가
+  workflow_dispatch:   # 수동 실행 버튼
 
 jobs:
-  update-calendar:
+  update-all:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,15 +22,21 @@ jobs:
           python-version: '3.11'
 
       - name: 패키지 설치
-        run: pip install icalendar requests -q
+        run: pip install icalendar requests python-dotenv -q
 
-      - name: 캘린더 업데이트
+      - name: 1) 캘린더 업데이트 (구글 캘린더 → data.js)
         run: python build_calendar.py
+
+      - name: 2) 팩폭 시리즈 업데이트 (새 팩폭 게시물 자동 추가)
+        env:
+          FACEBOOK_PAGE_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+        run: python update_facpok.py
 
       - name: 변경사항 커밋 & 푸시
         run: |
           git config user.name "dasikyaksa"
           git config user.email "1223soyun@gmail.com"
-          git add data.js
-          git diff --staged --quiet || git commit -m "캘린더 자동 업데이트 ($(date '+%Y-%m-%d'))"
+          git add data.js images/facpok/ || true
+          git diff --staged --quiet || git commit -m "주간 자동 업데이트 ($(date '+%Y-%m-%d'))"
           git push
