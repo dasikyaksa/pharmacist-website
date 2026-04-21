@@ -132,17 +132,17 @@ const DATA = {
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
-        "title": "씨오레 공구",
-        "start": "2026-05-26",
-        "end": "2026-06-01",
-        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%94%A8%EC%98%A4%EB%A0%88%20%EA%B3%B5%EA%B5%AC",
-        "link": "https://www.instagram.com/pharm_baksoyun/"
-    },
-    {
         "title": "바쿠치올",
         "start": "2026-05-26",
         "end": "2026-06-01",
         "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EB%B0%94%EC%BF%A0%EC%B9%98%EC%98%AC",
+        "link": "https://www.instagram.com/pharm_baksoyun/"
+    },
+    {
+        "title": "씨오레 공구",
+        "start": "2026-05-26",
+        "end": "2026-06-01",
+        "thumbnail": "https://placehold.co/80x80/ffc2c2/FFFFFF?text=%EC%94%A8%EC%98%A4%EB%A0%88%20%EA%B3%B5%EA%B5%AC",
         "link": "https://www.instagram.com/pharm_baksoyun/"
     },
     {
