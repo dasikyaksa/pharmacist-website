@@ -1,0 +1,39 @@
+name: 사용설명서 마감이벤트 자동 업데이트
+
+on:
+  schedule:
+    # 매일 오후 11시 KST = 14:00 UTC (공구 마지막날 저녁에 실행)
+    - cron: '0 14 * * *'
+  workflow_dispatch:   # 수동 실행 버튼
+
+jobs:
+  update-manuals:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 레포 체크아웃
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install requests python-dotenv -q
+
+      - name: 마감이벤트 업데이트
+        env:
+          FACEBOOK_PAGE_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+        run: python update_manuals.py --push
+
+      - name: 변경사항 커밋 & 푸시
+        run: |
+          git config user.name "dasikyaksa"
+          git config user.email "1223soyun@gmail.com"
+          git add data.js images/products/ || true
+          git diff --staged --quiet || git commit -m "마감이벤트 자동 업데이트 ($(date '+%Y-%m-%d'))"
+          git push || true
