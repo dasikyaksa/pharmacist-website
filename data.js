@@ -267,7 +267,7 @@ const DATA = {
     {
       category: "박약다식 제품",
       items: [
-        { name: "비타민D",     tags: ["비타민D", "면역", "뼈건강"],     thumbnail: "images/products/prod_vitd.jpg",              link: "https://www.instagram.com/p/DUHppzOD_Ua/" },
+        { name: "비타민D",     tags: ["비타민D", "면역", "뼈건강"],     thumbnail: "images/products/prod_vitd.jpg",              link: "https://www.instagram.com/p/DW_BXQSj17a/" },
         { name: "여드름영양제", tags: ["여드름", "피부", "영양제"],      thumbnail: "images/products/prod_acne_coming.svg",       link: null, comingSoon: "5월 신규 오픈 예정" }
       ]
     },
@@ -283,7 +283,7 @@ const DATA = {
     {
       category: "유산균",
       items: [
-        { name: "분홍이",    tags: ["유산균", "프로바이오틱스", "장건강"], thumbnail: "images/products/prod_pink.jpg",             link: "https://www.instagram.com/p/DT651hjj9LO/" },
+        { name: "분홍이",    tags: ["유산균", "프로바이오틱스", "장건강"], thumbnail: "images/products/prod_pink.jpg",             link: "https://www.instagram.com/p/DW04ehXj0qm/" },
         { name: "초록이",    tags: ["유산균", "프리바이오틱스"],           thumbnail: "images/products/prod_pink.jpg",             link: "https://www.instagram.com/p/DT651hjj9LO/" },
         { name: "노랑이",    tags: ["유산균", "장건강"],                   thumbnail: "images/products/prod_pink.jpg",             link: "https://www.instagram.com/p/DT651hjj9LO/" },
         { name: "여성유산균", tags: ["유산균", "질유산균", "여성건강"],   thumbnail: "images/products/prod_femlab.jpg",            link: "https://www.instagram.com/p/DWIPE6ijweB/" }
@@ -292,7 +292,7 @@ const DATA = {
     {
       category: "미네랄",
       items: [
-        { name: "마그샷",              tags: ["마그네슘", "수면", "근육"],      thumbnail: "images/products/prod_magshot.jpg",       link: "https://www.instagram.com/p/DTpxum2j-Ah/" },
+        { name: "마그샷",              tags: ["마그네슘", "수면", "근육"],      thumbnail: "images/products/prod_magshot.jpg",       link: "https://www.instagram.com/p/DXNpTA6D9AX/" },
         { name: "갓성비 산화마그네슘", tags: ["마그네슘", "변비", "갓성비"],   thumbnail: "images/products/prod_magox.jpg",         link: "https://www.instagram.com/p/DUfLcSKj-e0/" },
         { name: "칼마디K2",            tags: ["칼슘", "마그네슘", "비타민K2"], thumbnail: "images/products/prod_calmadi.jpg",       link: "https://www.instagram.com/p/DTE8FOKD5IB/" },
         { name: "풍선껌맛 철분",       tags: ["철분", "빈혈", "피로"],          thumbnail: "images/products/prod_iron.jpg",          link: "https://www.instagram.com/p/DVFc6MWD2eM/" }
@@ -309,7 +309,7 @@ const DATA = {
     {
       category: "기타",
       items: [
-        { name: "큐로세틴",  tags: ["퀘르세틴", "항산화", "염증"],  thumbnail: "images/products/prod_quercetin.jpg", link: "https://www.instagram.com/p/DUz4sz3D6MR/" },
+        { name: "큐로세틴",  tags: ["퀘르세틴", "항산화", "염증"],  thumbnail: "images/products/prod_quercetin.jpg", link: "https://www.instagram.com/p/DWtdmBmj2gk/" },
         { name: "디오스민",  tags: ["디오스민", "붓기", "혈관"],   thumbnail: "images/products/prod_diosmin.jpg",   link: "https://www.instagram.com/p/DUXGFyWjy00/" },
         { name: "루아빌",    tags: ["루테인", "아스타잔틴", "눈"], thumbnail: "images/products/prod_luabill.jpg",   link: "https://www.instagram.com/p/DWVE1g_D2F8/" },
         { name: "이노시톨",  tags: ["PCOS", "호르몬", "여성"],     thumbnail: "images/products/prod_inositol.jpg",  link: "https://www.instagram.com/p/DVaVQR4D3gE/" },
