@@ -67,23 +67,21 @@ function renderCalendar(date) {
   const label = document.getElementById('cal-month-label');
   label.textContent = `${y}년 ${m + 1}월`;
 
-  // 이 달에 걸쳐있는 이벤트 필터 (start~end 범위가 이 달과 겹치면 표시)
-  const monthStart = new Date(y, m, 1);
-  const monthEnd   = new Date(y, m + 1, 0);
-  const events = DATA.calendar.filter(ev => {
-    const s = new Date(ev.start);
-    const e = new Date(ev.end);
-    return s <= monthEnd && e >= monthStart;
-  });
+  // 이 달에 걸쳐있는 이벤트 필터 (문자열 비교 — timezone 무관)
+  const monthStr   = `${y}-${String(m + 1).padStart(2, '0')}`;        // "2026-05"
+  const monthFirst = `${monthStr}-01`;                                  // "2026-05-01"
+  const lastDay    = new Date(y, m + 1, 0).getDate();
+  const monthLast  = `${monthStr}-${String(lastDay).padStart(2, '0')}`; // "2026-05-31"
+  const events = DATA.calendar.filter(ev =>
+    ev.start <= monthLast && ev.end >= monthFirst
+  );
 
   // 이벤트를 날짜(day)별로 그룹화
   // 이 달에 시작하는 날짜에 표시 (이전 달 시작이면 1일에 표시)
   const eventMap = {};
   events.forEach(ev => {
-    const s = new Date(ev.start);
-    const day = (s.getFullYear() === y && s.getMonth() === m)
-      ? s.getDate()
-      : 1;   // 이전 달에서 시작한 이벤트는 1일에 표시
+    const startMonth = ev.start.slice(0, 7);
+    const day = startMonth === monthStr ? parseInt(ev.start.slice(8), 10) : 1;
     if (!eventMap[day]) eventMap[day] = [];
     eventMap[day].push(ev);
   });
