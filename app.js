@@ -67,16 +67,23 @@ function renderCalendar(date) {
   const label = document.getElementById('cal-month-label');
   label.textContent = `${y}년 ${m + 1}월`;
 
-  // 이 달의 이벤트만 필터 (start 날짜 기준)
+  // 이 달에 걸쳐있는 이벤트 필터 (start~end 범위가 이 달과 겹치면 표시)
+  const monthStart = new Date(y, m, 1);
+  const monthEnd   = new Date(y, m + 1, 0);
   const events = DATA.calendar.filter(ev => {
-    const d = new Date(ev.start);
-    return d.getFullYear() === y && d.getMonth() === m;
+    const s = new Date(ev.start);
+    const e = new Date(ev.end);
+    return s <= monthEnd && e >= monthStart;
   });
 
   // 이벤트를 날짜(day)별로 그룹화
+  // 이 달에 시작하는 날짜에 표시 (이전 달 시작이면 1일에 표시)
   const eventMap = {};
   events.forEach(ev => {
-    const day = new Date(ev.start).getDate();
+    const s = new Date(ev.start);
+    const day = (s.getFullYear() === y && s.getMonth() === m)
+      ? s.getDate()
+      : 1;   // 이전 달에서 시작한 이벤트는 1일에 표시
     if (!eventMap[day]) eventMap[day] = [];
     eventMap[day].push(ev);
   });
