@@ -67,27 +67,13 @@ function renderCalendar(date) {
   const label = document.getElementById('cal-month-label');
   label.textContent = `${y}년 ${m + 1}월`;
 
-  // 이 달에 걸쳐있는 이벤트 필터 (문자열 비교 — timezone 무관)
-  const monthStr   = `${y}-${String(m + 1).padStart(2, '0')}`;        // "2026-05"
-  const monthFirst = `${monthStr}-01`;                                  // "2026-05-01"
-  const lastDay    = new Date(y, m + 1, 0).getDate();
-  const monthLast  = `${monthStr}-${String(lastDay).padStart(2, '0')}`; // "2026-05-31"
-  const events = DATA.calendar.filter(ev =>
-    ev.start <= monthLast && ev.end >= monthFirst
-  );
-
-  // 이벤트를 날짜(day)별로 그룹화
-  // 이 달에 시작하는 날짜에 표시 (이전 달 시작이면 1일에 표시)
-  const eventMap = {};
-  events.forEach(ev => {
-    const startMonth = ev.start.slice(0, 7);
-    const day = startMonth === monthStr ? parseInt(ev.start.slice(8), 10) : 1;
-    if (!eventMap[day]) eventMap[day] = [];
-    eventMap[day].push(ev);
-  });
+  // 문자열 기준 날짜 헬퍼 (timezone 완전 무관)
+  const monthStr  = `${y}-${String(m + 1).padStart(2, '0')}`;  // "2026-05"
+  const pad = n => String(n).padStart(2, '0');
+  const dateStr = d => `${monthStr}-${pad(d)}`;                 // "2026-05-07"
 
   // 달력 생성
-  const firstDay = new Date(y, m, 1).getDay();   // 0=일
+  const firstDay    = new Date(y, m, 1).getDay();
   const daysInMonth = new Date(y, m + 1, 0).getDate();
   const daysInPrev  = new Date(y, m, 0).getDate();
 
@@ -97,16 +83,27 @@ function renderCalendar(date) {
   const grid = document.getElementById('cal-grid');
   grid.innerHTML = '';
 
-  // 이전 달 빈 칸 채우기
+  // 이전 달 빈 칸
   for (let i = firstDay - 1; i >= 0; i--) {
-    grid.appendChild(makeDayCell(daysInPrev - i, true, false, false, null, null));
+    grid.appendChild(makeDayCell(daysInPrev - i, true, false, false, [], null));
   }
 
-  // 이번 달
+  // 이번 달 — 각 날짜에 걸쳐있는 이벤트를 직접 필터링
   for (let d = 1; d <= daysInMonth; d++) {
+    const ds  = dateStr(d);
     const dow = new Date(y, m, d).getDay();
     const isToday = isCurrentMonth && d === today.getDate();
-    grid.appendChild(makeDayCell(d, false, isToday, dow, eventMap[d] || [], y * 100 + m));
+
+    // 시작일이 이 날인 이벤트 표시
+    // 이전 달에 시작한 이벤트(end가 이번 달에 걸침)는 1일에만 표시
+    const dayEvents = DATA.calendar.filter(ev => {
+      if (ev.start.slice(0, 7) === monthStr) {
+        return parseInt(ev.start.slice(8), 10) === d;           // 이번 달 시작 → 시작일에 표시
+      }
+      return d === 1 && ev.start < dateStr(1) && ev.end >= dateStr(1); // 이전 달 시작 → 1일에만
+    });
+
+    grid.appendChild(makeDayCell(d, false, isToday, dow, dayEvents, null));
   }
 
   // 다음 달 빈 칸 채우기 (7의 배수 맞추기)
