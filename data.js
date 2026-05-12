@@ -438,6 +438,24 @@ const DATA = {
     { group: "약국 꿀팁", title: "피임약 발암물질 논란",    tags: ["피임약","발암"],         thumbnail: "images/facpok/DWSV3rpk7oG.jpg", link: "https://www.instagram.com/p/DWSV3rpk7oG/" },
     // ── 기타 ──
     { group: "기타", title: "파란안약 팩폭",           tags: ["안약","눈"],             thumbnail: "images/facpok/DUPswELD2JZ.jpg", link: "https://www.instagram.com/p/DUPswELD2JZ/" },
-    { group: "기타", title: "호갱방지 팩폭타임 8탄",   tags: ["호갱방지","팩폭"],       thumbnail: "images/facpok/DQGr97-D2m_.jpg", link: "https://www.instagram.com/p/DQGr97-D2m_/" }
+    { group: "기타", title: "호갱방지 팩폭타임 8탄",   tags: ["호갱방지","팩폭"],       thumbnail: "images/facpok/DQGr97-D2m_.jpg", link: "https://www.instagram.com/p/DQGr97-D2m_/" },
+
+    { group: "팩폭", title: "🙋🏻‍♀️팩폭 정리본 요청이 어제만 3000건이었습니다", tags: ["팩폭"], thumbnail: "images/facpok/DFDQ0NdvyaH.jpg", link: "https://www.instagram.com/reel/DFDQ0NdvyaH/" },
+    { group: "팩폭", title: "[약학다식 팩폭 연구소] 오픈합니다", tags: ["팩폭"], thumbnail: "images/facpok/DTuJ0UmjyTz.jpg", link: "https://www.instagram.com/p/DTuJ0UmjyTz/" },
+    { group: "팩폭", title: "빌베리 영양제 이슈있는거 아니냐는", tags: ["팩폭"], thumbnail: "images/facpok/DVZnhDWkzUr.jpg", link: "https://www.instagram.com/p/DVZnhDWkzUr/" },
+    { group: "팩폭", title: "👩🏻‍⚕️약사가 분석해드립니다!", tags: ["팩폭"], thumbnail: "images/facpok/DWgR1pLj-DU.jpg", link: "https://www.instagram.com/p/DWgR1pLj-DU/" },
+    { group: "팩폭", title: "약사의 빨간통 “알약” 팩폭 분석입니다!!", tags: ["팩폭"], thumbnail: "images/facpok/DWpudFTiZ45.jpg", link: "https://www.instagram.com/reel/DWpudFTiZ45/" },
+    { group: "팩폭", title: "약사의 팩폭리뷰 4탄 : 샐러드캔디!", tags: ["팩폭"], thumbnail: "images/facpok/DW8Sa5SD2_P.jpg", link: "https://www.instagram.com/reel/DW8Sa5SD2_P/" },
+    { group: "팩폭", title: "👩🏻‍⚕️박사과정 약사의 팩폭리뷰 5탄. 오쏘몰 이뮨", tags: ["팩폭"], thumbnail: "images/facpok/DXDje1fD0lI.jpg", link: "https://www.instagram.com/reel/DXDje1fD0lI/" },
+    { group: "팩폭", title: "🙋🏻‍♀️약사의 영양제 팩폭리뷰", tags: ["팩폭"], thumbnail: "images/facpok/DXIXDg2j-RW.jpg", link: "https://www.instagram.com/p/DXIXDg2j-RW/" },
+    { group: "팩폭", title: "혈당영양제 팩폭 점수!", tags: ["팩폭"], thumbnail: "images/facpok/DXJRljnD4vr.jpg", link: "https://www.instagram.com/reel/DXJRljnD4vr/" },
+    { group: "팩폭", title: "혈당 영양제 점수 🙋🏻‍♀️릴스 내용 피드로 동일하게 정리해 올려드립니다", tags: ["팩폭"], thumbnail: "images/facpok/DXJ3iO9j8Ek.jpg", link: "https://www.instagram.com/p/DXJ3iO9j8Ek/" },
+    { group: "팩폭", title: "노즈픽션 팩폭리뷰!!", tags: ["팩폭"], thumbnail: "images/facpok/DXWkpLRD-Qb.jpg", link: "https://www.instagram.com/reel/DXWkpLRD-Qb/" },
+    { group: "팩폭", title: "이번 주 올라갔던 팩폭리뷰 릴스 모음집!", tags: ["팩폭"], thumbnail: "images/facpok/DXduXfuj8ZZ.jpg", link: "https://www.instagram.com/p/DXduXfuj8ZZ/" },
+    { group: "팩폭", title: "유한양행 비타민C! 약사의 팩폭리뷰 영양제 7탄", tags: ["팩폭"], thumbnail: "images/facpok/DXsd2RQjyvV.jpg", link: "https://www.instagram.com/reel/DXsd2RQjyvV/" },
+    { group: "팩폭", title: "약사가 팩폭리뷰하는 영양제", tags: ["팩폭"], thumbnail: "images/facpok/DXy_gh8vLOK.jpg", link: "https://www.instagram.com/reel/DXy_gh8vLOK/" },
+    { group: "팩폭", title: "팩폭리뷰 릴스 모음집!", tags: ["팩폭"], thumbnail: "images/facpok/DYCHDb-GOT1.jpg", link: "https://www.instagram.com/p/DYCHDb-GOT1/" },
+    { group: "팩폭", title: "간혹 저에대해 오해하시는게", tags: ["팩폭"], thumbnail: "images/facpok/DYEVbDdCl3E.jpg", link: "https://www.instagram.com/p/DYEVbDdCl3E/" }
+  
   ]
 };
