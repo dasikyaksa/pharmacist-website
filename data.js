@@ -294,7 +294,7 @@ const DATA = {
       items: [
         { name: "마그샷",              tags: ["마그네슘", "수면", "근육"],      thumbnail: "images/products/prod_magshot.jpg",       link: "https://www.instagram.com/p/DXNpTA6D9AX/" },
         { name: "갓성비 산화마그네슘", tags: ["마그네슘", "변비", "갓성비"],   thumbnail: "images/products/prod_magox.jpg",         link: "https://www.instagram.com/p/DUfLcSKj-e0/" },
-        { name: "칼마디K2",            tags: ["칼슘", "마그네슘", "비타민K2"], thumbnail: "images/products/prod_calmadi.jpg",       link: "https://www.instagram.com/p/DTE8FOKD5IB/" },
+        { name: "칼마디K2",            tags: ["칼슘", "마그네슘", "비타민K2"], thumbnail: "images/products/prod_calmadi.jpg",       link: "https://www.instagram.com/p/DX5ghDxGjjY/" },
         { name: "풍선껌맛 철분",       tags: ["철분", "빈혈", "피로"],          thumbnail: "images/products/prod_iron.jpg",          link: "https://www.instagram.com/p/DVFc6MWD2eM/" }
       ]
     },
@@ -310,7 +310,7 @@ const DATA = {
       category: "기타",
       items: [
         { name: "큐로세틴",  tags: ["퀘르세틴", "항산화", "염증"],  thumbnail: "images/products/prod_quercetin.jpg", link: "https://www.instagram.com/p/DWtdmBmj2gk/" },
-        { name: "디오스민",  tags: ["디오스민", "붓기", "혈관"],   thumbnail: "images/products/prod_diosmin.jpg",   link: "https://www.instagram.com/p/DUXGFyWjy00/" },
+        { name: "디오스민",  tags: ["디오스민", "붓기", "혈관"],   thumbnail: "images/products/prod_diosmin.jpg",   link: "https://www.instagram.com/p/DXy11pIj6Z4/" },
         { name: "루아빌",    tags: ["루테인", "아스타잔틴", "눈"], thumbnail: "images/products/prod_luabill.jpg",   link: "https://www.instagram.com/p/DWVE1g_D2F8/" },
         { name: "이노시톨",  tags: ["PCOS", "호르몬", "여성"],     thumbnail: "images/products/prod_inositol.jpg",  link: "https://www.instagram.com/p/DVaVQR4D3gE/" },
         { name: "아미노콤",  tags: ["아미노산", "근육", "운동"],   thumbnail: "images/products/prod_aminocom.jpg",  link: "https://www.instagram.com/p/DVqPezADyrE/" },
