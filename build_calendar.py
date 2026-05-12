@@ -33,6 +33,14 @@ ICAL_URL = (
 # 3일 미만 이벤트는 공구일정이 아닌 것으로 간주 (gonggu_sync.py 기준 동일)
 MIN_DAYS = 3
 
+# 제목에 아래 키워드가 포함되면 공구일정이 아닌 것으로 간주하여 제외
+EXCLUDE_KEYWORDS = [
+    '사장님 off', ' off', '논문', '영상', '자수', '리뷰', '피라미드', '썰',
+    '순서', '변비약', '아이디어', '촬영', '편집', '기획', '미팅', '회의',
+    '개인', '휴무', '휴가', 'nmn', 'ydy', '피드', '릴스', '스토리', '사전알림',
+    '올리기', '찾아보기', '정리본', '모음집', '비교', '분석',
+]
+
 # 현재 날짜 기준 앞뒤 몇 달치 일정을 가져올지
 MONTHS_AHEAD = 3
 
@@ -79,6 +87,11 @@ def fetch_events() -> list[dict]:
 
         # 날짜 범위 필터
         if end < cutoff or start > limit:
+            continue
+
+        # 비공구 키워드 제외
+        sl = summary.lower()
+        if any(k.lower() in sl for k in EXCLUDE_KEYWORDS):
             continue
 
         events.append({
