@@ -5,6 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   renderProfile();
+  renderJeongli();
   renderMustRead();
   renderCalendar(new Date());
   renderProducts();
@@ -13,6 +14,49 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initNavHighlight();
 });
+
+/* ──────────────────────────────────────────
+   정리본 모음집
+────────────────────────────────────────── */
+function renderJeongli() {
+  const container = document.getElementById('jeongli-container');
+  if (!container || !DATA.jeongli) return;
+
+  const { categories } = DATA.jeongli;
+
+  container.innerHTML = categories.map(cat => {
+    // 그룹(소제목)이 있는 카테고리
+    if (cat.groups) {
+      const groupsHtml = cat.groups.map(g => `
+        <div class="jeongli-subgroup">
+          <span class="jeongli-subtitle">${g.subtitle}</span>
+          <ul class="jeongli-list">
+            ${g.items.map(item => `
+              <li><a class="jeongli-item" href="${item.url}" target="_blank" rel="noopener">${item.title}</a></li>
+            `).join('')}
+          </ul>
+        </div>
+      `).join('');
+      return `
+        <div class="jeongli-card">
+          <p class="jeongli-cat-title">${cat.title}</p>
+          ${groupsHtml}
+        </div>
+      `;
+    }
+    // 그룹 없이 flat items
+    return `
+      <div class="jeongli-card">
+        <p class="jeongli-cat-title">${cat.title}</p>
+        <ul class="jeongli-list">
+          ${cat.items.map(item => `
+            <li><a class="jeongli-item" href="${item.url}" target="_blank" rel="noopener">${item.title}</a></li>
+          `).join('')}
+        </ul>
+      </div>
+    `;
+  }).join('');
+}
 
 /* ──────────────────────────────────────────
    프로필
@@ -383,7 +427,7 @@ function initMobileMenu() {
    스크롤 기반 네비 하이라이트
 ────────────────────────────────────────── */
 function initNavHighlight() {
-  const sections = ['mustread', 'schedule', 'manuals', 'facpok'];
+  const sections = ['jeongli', 'mustread', 'manuals', 'facpok', 'schedule'];
   const links    = document.querySelectorAll('.nav-link[data-section]');
   const headerH  = 64;
 

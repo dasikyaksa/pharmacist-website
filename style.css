@@ -913,6 +913,92 @@ button.cal-event {
 }
 
 /* =============================================
+   정리본 모음집
+   ============================================= */
+#jeongli {
+  padding: 48px 0 32px;
+  background: linear-gradient(135deg, #fff6f0 0%, #fff0f3 100%);
+}
+
+.jeongli-main-link {
+  color: #d45a3a;
+  text-decoration: none;
+  border-bottom: 2px solid #f0856a;
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.jeongli-main-link:hover {
+  color: #b8421f;
+  border-color: #d45a3a;
+}
+
+#jeongli-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 20px;
+}
+@media (max-width: 520px) {
+  #jeongli-container { grid-template-columns: 1fr; }
+}
+
+.jeongli-card {
+  background: #fff;
+  border: 1.5px solid #f5c4a8;
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  box-shadow: 0 2px 10px rgba(255,120,80,0.08);
+}
+
+.jeongli-cat-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #c8441e;
+  background: linear-gradient(90deg, #ffe3d0, #ffd0da);
+  border-radius: 8px;
+  padding: 5px 12px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.jeongli-subgroup {
+  margin-bottom: 10px;
+}
+.jeongli-subtitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: #d46030;
+  display: block;
+  margin-bottom: 4px;
+  padding-left: 2px;
+}
+
+.jeongli-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.jeongli-list li {
+  margin-bottom: 4px;
+}
+
+.jeongli-item {
+  display: block;
+  font-size: 12.5px;
+  color: #5a3020;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #fff8f4;
+  border: 1px solid #f5ddd0;
+  transition: background 0.15s, color 0.15s;
+  line-height: 1.4;
+}
+.jeongli-item:hover {
+  background: #ffe8d8;
+  color: #b83010;
+}
+
+/* =============================================
    유틸리티
    ============================================= */
 .visually-hidden {

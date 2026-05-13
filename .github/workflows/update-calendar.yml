@@ -33,6 +33,11 @@ jobs:
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
         run: python update_facpok.py
 
+      - name: 3) 정리본 모음집 업데이트 (노션 → data.js)
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: python update_jeongli.py
+
       - name: 변경사항 커밋 & 푸시
         run: |
           git config user.name "dasikyaksa"
