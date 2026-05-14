@@ -11,10 +11,15 @@ update_jeongli.py — 노션 정리본 모음집 → data.js 자동 업데이트
 import os
 import re
 import sys
+import io
 import json
 import requests
 from pathlib import Path
 from datetime import date
+
+# Windows 한글 출력 처리
+if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 # ── 설정 ──────────────────────────────────────────
 NOTION_TOKEN   = os.environ.get("NOTION_TOKEN", "")

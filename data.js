@@ -463,96 +463,207 @@ const DATA = {
   // 정리본 모음집 (노션 연동 — 매주 월요일 자동 업데이트)
   // ──────────────────────────────────────────────
   jeongli: {
-    notionUrl: "https://www.notion.so/35413b2c9ebf43d190e17a3777816625",
-    categories: [
-      {
-        title: "베르베린 정리본",
-        items: [
-          { title: "15. 베르베린 정리본", url: "https://www.notion.so/1b1bce0c6ea2802692c5c6130c5a50f9" }
-        ]
-      },
-      {
-        title: "피부 관련",
-        groups: [
-          {
-            subtitle: "공구 화장품",
-            items: [
-              { title: "1. 바쿠치올 형광등템 구매자 필독 페이지", url: "https://www.notion.so/167bce0c6ea2805ba20fc8a3906ee965" },
-              { title: "2. VT 리들샷 링크 & 구매자 필독 페이지", url: "https://www.notion.so/2eebce0c6ea28062af9ce45d122d2277" },
-              { title: "3. [수분+진정]팜트리 순한 라인 공동구매", url: "https://www.notion.so/23abce0c6ea280d898add8bfd3555589" }
+    "notionUrl": "https://www.notion.so/35413b2c9ebf43d190e17a3777816625",
+    "categories": [
+        {
+            "title": "베르베린 정리본",
+            "items": [
+                {
+                    "title": "15. 베르베린 정리본 ",
+                    "url": "https://www.notion.so/1b1bce0c6ea2802692c5c6130c5a50f9"
+                }
             ]
-          },
-          {
-            subtitle: "여드름",
-            items: [
-              { title: "5. 여드름 났을 때", url: "https://www.notion.so/14ebce0c6ea2803f8657ed44aca52c3f" },
-              { title: "6. 여드름 짠 후 관리", url: "https://www.notion.so/14ebce0c6ea280b4b543c83cac7adc26" },
-              { title: "7. 여드름 영양제", url: "https://www.notion.so/14ebce0c6ea280ef8623d5610dddef90" },
-              { title: "8. 여드름 패치 리얼 후기", url: "https://www.notion.so/2f5bce0c6ea28019b2fce30e4ab088eb" }
+        },
+        {
+            "title": "피부 관련",
+            "groups": [
+                {
+                    "subtitle": "공구 화장품",
+                    "items": [
+                        {
+                            "title": "1. 바쿠치올 형광등템 구매자 필독 페이지",
+                            "url": "https://www.notion.so/167bce0c6ea2805ba20fc8a3906ee965"
+                        },
+                        {
+                            "title": "2. VT 리들샷 링크 & 구매자 필독 페이지",
+                            "url": "https://www.notion.so/2eebce0c6ea28062af9ce45d122d2277"
+                        },
+                        {
+                            "title": "3. [수분+진정]팜트리 순한 라인 공동구매",
+                            "url": "https://www.notion.so/23abce0c6ea280d898add8bfd3555589"
+                        }
+                    ]
+                },
+                {
+                    "subtitle": "여드름",
+                    "items": [
+                        {
+                            "title": "5. 여드름 났을 때",
+                            "url": "https://www.notion.so/14ebce0c6ea2803f8657ed44aca52c3f"
+                        },
+                        {
+                            "title": "6. 여드름 짠 후 관리",
+                            "url": "https://www.notion.so/14ebce0c6ea280b4b543c83cac7adc26"
+                        },
+                        {
+                            "title": "7. 여드름 영양제",
+                            "url": "https://www.notion.so/14ebce0c6ea280ef8623d5610dddef90"
+                        },
+                        {
+                            "title": "8. 여드름 패치 리얼 후기",
+                            "url": "https://www.notion.so/2f5bce0c6ea28019b2fce30e4ab088eb"
+                        }
+                    ]
+                },
+                {
+                    "subtitle": "기타",
+                    "items": [
+                        {
+                            "title": "10. 올바른 세안 법",
+                            "url": "https://www.notion.so/14ebce0c6ea280c5a2e6d0c72e0a62a0"
+                        },
+                        {
+                            "title": "11. 피부 망치는 생활습관 + 필요한 생활습관 (업데이트 중)",
+                            "url": "https://www.notion.so/14ebce0c6ea28072ae64e9a32f0dfb03"
+                        },
+                        {
+                            "title": "12. 모공 정리본!",
+                            "url": "https://www.notion.so/106bce0c6ea280d48284d65b87c818e0"
+                        },
+                        {
+                            "title": "13. 신체 부위 별 색소침착 정리본!",
+                            "url": "https://www.notion.so/12cbce0c6ea280d89518c6ad70e97b3a"
+                        },
+                        {
+                            "title": "14. 선크림 고르는 법",
+                            "url": "https://www.notion.so/14ebce0c6ea2808887c6d21cedd055f6"
+                        }
+                    ]
+                }
             ]
-          },
-          {
-            subtitle: "기타",
-            items: [
-              { title: "10. 올바른 세안 법", url: "https://www.notion.so/14ebce0c6ea280c5a2e6d0c72e0a62a0" },
-              { title: "11. 피부 망치는 생활습관 + 필요한 생활습관", url: "https://www.notion.so/14ebce0c6ea28072ae64e9a32f0dfb03" },
-              { title: "12. 모공 정리본!", url: "https://www.notion.so/106bce0c6ea280d48284d65b87c818e0" },
-              { title: "13. 신체 부위 별 색소침착 정리본!", url: "https://www.notion.so/12cbce0c6ea280d89518c6ad70e97b3a" },
-              { title: "14. 선크림 고르는 법", url: "https://www.notion.so/14ebce0c6ea2808887c6d21cedd055f6" }
+        },
+        {
+            "title": "혈당/혈압/고지혈 관련",
+            "items": [
+                {
+                    "title": "15. 베르베린 정리본 (1)",
+                    "url": "https://www.notion.so/347bce0c6ea2805b918ffe9f5df776f1"
+                },
+                {
+                    "title": "16. 혈당 영양제 팩폭 정리",
+                    "url": "https://www.notion.so/343bce0c6ea280c5bea4e5ad23457dd3"
+                },
+                {
+                    "title": "17. 혈압 영양제 팩폭 논문 정리",
+                    "url": "https://www.notion.so/348bce0c6ea280aea3b7d7592144ab1a"
+                },
+                {
+                    "title": "18. 고지혈 영양제 논문 팩트 정리",
+                    "url": "https://www.notion.so/348bce0c6ea2801cb4b4e39446f4a084"
+                }
             ]
-          }
-        ]
-      },
-      {
-        title: "혈당/혈압/고지혈 관련",
-        items: [
-          { title: "15. 베르베린 정리본", url: "https://www.notion.so/347bce0c6ea2805b918ffe9f5df776f1" },
-          { title: "16. 혈당 영양제 팩폭 정리", url: "https://www.notion.so/343bce0c6ea280c5bea4e5ad23457dd3" },
-          { title: "17. 혈압 영양제 팩폭 논문 정리", url: "https://www.notion.so/348bce0c6ea280aea3b7d7592144ab1a" },
-          { title: "18. 고지혈 영양제 논문 팩트 정리", url: "https://www.notion.so/348bce0c6ea2801cb4b4e39446f4a084" }
-        ]
-      },
-      {
-        title: "눈 관련",
-        items: [
-          { title: "20. 루아빌 섭취법 및 주의사항", url: "https://www.notion.so/1ffbce0c6ea280af9be5ee90c82f3b9a" },
-          { title: "21. 눈영양제 고르는 법", url: "https://www.notion.so/1ffbce0c6ea280178f07dcd247b74535" },
-          { title: "22. 슈퍼 베리 4종 데이터 정리", url: "https://www.notion.so/250bce0c6ea2805ebd4bc5ad551fa8f7" }
-        ]
-      },
-      {
-        title: "여성 관련",
-        items: [
-          { title: "30. 임신 준비 & 중 & 후 영양제 정리본", url: "https://www.notion.so/17bbce0c6ea28064855bc6861bcab361" },
-          { title: "31. 생리전증후군, 생리통 정리본!", url: "https://www.notion.so/119bce0c6ea2809db916fe032efaf1ef" },
-          { title: "32. 생리대 정리본_업데이트 버전", url: "https://www.notion.so/1ffbce0c6ea28044bd6edf9dcd31a8d4" },
-          { title: "33. 이노시톨 정리본", url: "https://www.notion.so/1f7bce0c6ea280f79610e1dab20b9d8b" }
-        ]
-      },
-      {
-        title: "기타 관련",
-        items: [
-          { title: "40. 부기 정리본!", url: "https://www.notion.so/106bce0c6ea28059baa5c90e76fc0a13" },
-          { title: "41. 위고비 vs 마운자로 vs 삭센다 비교해보기!", url: "https://www.notion.so/28dbce0c6ea28030b70de4eb22166269" },
-          { title: "42. 다이어트 제품들 논문 팩트 정리", url: "https://www.notion.so/17abce0c6ea280ed9c36fc4f40f14b63" },
-          { title: "43. 키 성장 영양제 정리본", url: "https://www.notion.so/220bce0c6ea2807cba5bd6faeb9779c3" },
-          { title: "44. 성인 집중력 영양제!?", url: "https://www.notion.so/1f7bce0c6ea280199774e1e030684c3c" },
-          { title: "45. 커큐민 원료사별 흡수율과 제품", url: "https://www.notion.so/1e8bce0c6ea280b391d6c4926052eabe" },
-          { title: "46. 탈모 영양제 종결", url: "https://www.notion.so/30ebce0c6ea2800b8cd0d0ab1e2b578e" },
-          { title: "47. 면역 정리본", url: "https://www.notion.so/2ffbce0c6ea280998af9c497ad3decdd" },
-          { title: "48. 여름 꿀템 정리본", url: "https://www.notion.so/357bce0c6ea280678bd0f0ee10961f27" }
-        ]
-      },
-      {
-        title: "박약다식 추천템 리스트",
-        items: [
-          { title: "50. [유산균] 추천리스트", url: "https://www.notion.so/2e8bce0c6ea28058b504e867d8c16268" },
-          { title: "51. [오메가3] 리스트 정리본", url: "https://www.notion.so/2e3bce0c6ea280d6bd40c8f6b37f4e9f" },
-          { title: "52. 4세대 오메가3 팩폭 정리본", url: "https://www.notion.so/2f1bce0c6ea280d6b03ec3b65c138893" },
-          { title: "53. 종합비타민 추천리스트", url: "https://www.instagram.com/p/DVk4AhJD3Vb/?img_index=1" }
-        ]
-      }
+        },
+        {
+            "title": "눈 관련",
+            "items": [
+                {
+                    "title": "20. 루아빌 섭취법 및 주의사항",
+                    "url": "https://www.notion.so/1ffbce0c6ea280af9be5ee90c82f3b9a"
+                },
+                {
+                    "title": "21. 눈영양제 고르는 법",
+                    "url": "https://www.notion.so/1ffbce0c6ea280178f07dcd247b74535"
+                },
+                {
+                    "title": "22. 슈퍼 베리 4종 데이터 정리",
+                    "url": "https://www.notion.so/250bce0c6ea2805ebd4bc5ad551fa8f7"
+                }
+            ]
+        },
+        {
+            "title": "여성 관련",
+            "items": [
+                {
+                    "title": "30. 임신 준비& 중 & 후 영양제 정리본",
+                    "url": "https://www.notion.so/17bbce0c6ea28064855bc6861bcab361"
+                },
+                {
+                    "title": "31. 생리전증후군, 생리통 정리본!",
+                    "url": "https://www.notion.so/119bce0c6ea2809db916fe032efaf1ef"
+                },
+                {
+                    "title": "32. 생리대 정리본_업데이트 버전",
+                    "url": "https://www.notion.so/1ffbce0c6ea28044bd6edf9dcd31a8d4"
+                },
+                {
+                    "title": "33. 이노시톨 정리본",
+                    "url": "https://www.notion.so/1f7bce0c6ea280f79610e1dab20b9d8b"
+                }
+            ]
+        },
+        {
+            "title": "기타 관련",
+            "items": [
+                {
+                    "title": "40. 부기 정리본!",
+                    "url": "https://www.notion.so/106bce0c6ea28059baa5c90e76fc0a13"
+                },
+                {
+                    "title": "41. 위고비 vs 마운자로 vs 삭센다 비교해보기!",
+                    "url": "https://www.notion.so/28dbce0c6ea28030b70de4eb22166269"
+                },
+                {
+                    "title": "42. 다이어트 제품들 논문 팩트 정리",
+                    "url": "https://www.notion.so/17abce0c6ea280ed9c36fc4f40f14b63"
+                },
+                {
+                    "title": "43. 키 성장 영양제 정리본",
+                    "url": "https://www.notion.so/220bce0c6ea2807cba5bd6faeb9779c3"
+                },
+                {
+                    "title": "44. 성인 집중력 영양제!?",
+                    "url": "https://www.notion.so/1f7bce0c6ea280199774e1e030684c3c"
+                },
+                {
+                    "title": "45. 커큐민🥘 원료사별 흡수율과 제품",
+                    "url": "https://www.notion.so/1e8bce0c6ea280b391d6c4926052eabe"
+                },
+                {
+                    "title": "46. 탈모 영양제 종결",
+                    "url": "https://www.notion.so/30ebce0c6ea2800b8cd0d0ab1e2b578e"
+                },
+                {
+                    "title": "47. 면역 정리본",
+                    "url": "https://www.notion.so/2ffbce0c6ea280998af9c497ad3decdd"
+                },
+                {
+                    "title": "48. 여름 꿀템 정리본",
+                    "url": "https://www.notion.so/357bce0c6ea280678bd0f0ee10961f27"
+                }
+            ]
+        },
+        {
+            "title": "박약다식 추천템 리스트",
+            "items": [
+                {
+                    "title": "50. [유산균] 추천리스트",
+                    "url": "https://www.notion.so/2e8bce0c6ea28058b504e867d8c16268"
+                },
+                {
+                    "title": "51. [오메가3] 리스트 정리본",
+                    "url": "https://www.notion.so/2e3bce0c6ea280d6bd40c8f6b37f4e9f"
+                },
+                {
+                    "title": "52. 4세대 오메가3 팩폭 정리본",
+                    "url": "https://www.notion.so/2f1bce0c6ea280d6b03ec3b65c138893"
+                },
+                {
+                    "title": "✔️53. 종합비타민 추천리스트",
+                    "url": "https://www.instagram.com/p/DVk4AhJD3Vb/?img_index=1"
+                }
+            ]
+        }
     ]
-  }
+}
 
 };
