@@ -352,7 +352,7 @@ const DATA = {
       category: "박약다식 제품",
       items: [
         { name: "비타민D",     tags: ["비타민D", "면역", "뼈건강"],     thumbnail: "images/products/prod_vitd.jpg",              link: "https://www.instagram.com/p/DW_BXQSj17a/" },
-        { name: "여드름영양제", tags: ["여드름", "피부", "영양제"],      thumbnail: "images/products/prod_acne_coming.svg",       link: null, comingSoon: "5월 신규 오픈 예정" }
+        { name: "오늘도 맑아연", tags: ["여드름", "피부", "영양제"],      thumbnail: "images/products/prod_acne_coming.svg",       link: "https://www.instagram.com/p/DYGVMgIlPPE/?img_index=1" }
       ]
     },
     {
@@ -368,7 +368,7 @@ const DATA = {
       category: "유산균",
       items: [
         { name: "분홍이",    tags: ["유산균", "프로바이오틱스", "장건강"], thumbnail: "images/products/prod_pink.jpg",             link: "https://www.instagram.com/p/DW04ehXj0qm/" },
-        { name: "초록이",    tags: ["유산균", "프리바이오틱스"],           thumbnail: "images/products/prod_green.jpg",             link: "https://www.instagram.com/p/DVR9gqzk5qe/" },
+        { name: "초록이",    tags: ["유산균", "프리바이오틱스"],           thumbnail: "images/products/prod_green.jpg",             link: "https://www.instagram.com/p/DYTN9hMmBq5/?img_index=1" },
         { name: "노랑이",    tags: ["유산균", "장건강"],                   thumbnail: "images/products/prod_yellow.jpg",             link: "https://www.instagram.com/p/DVR9gqzk5qe/" },
         { name: "여성유산균", tags: ["유산균", "질유산균", "여성건강"],   thumbnail: "images/products/prod_femlab.jpg",            link: "https://www.instagram.com/p/DWIPE6ijweB/" }
       ]
