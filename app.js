@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ──────────────────────────────────────────
-   정리본 모음집
+   정리본 모음집 (아코디언)
 ────────────────────────────────────────── */
 function renderJeongli() {
   const container = document.getElementById('jeongli-container');
@@ -24,10 +24,33 @@ function renderJeongli() {
 
   const { categories } = DATA.jeongli;
 
-  container.innerHTML = categories.map(cat => {
-    // 그룹(소제목)이 있는 카테고리
+  // 카테고리 내 모든 아이템 추출 (그룹 포함)
+  function getAllItems(cat) {
+    if (cat.groups) return cat.groups.flatMap(g => g.items);
+    return cat.items || [];
+  }
+
+  // 아이템 제목에서 앞 번호 추출 ("15. 베르베린" → 15, "✔️53. 종합비" → 53)
+  function extractNum(title) {
+    const m = title.match(/(\d+)\./);
+    return m ? parseInt(m[1]) : null;
+  }
+
+  // "(15번)" 또는 "(1~14번)" 형식
+  function numRange(cat) {
+    const nums = getAllItems(cat).map(i => extractNum(i.title)).filter(n => n !== null);
+    if (!nums.length) return '';
+    const mn = Math.min(...nums), mx = Math.max(...nums);
+    return mn === mx ? `(${mn}번)` : `(${mn}~${mx}번)`;
+  }
+
+  container.innerHTML = categories.map((cat, idx) => {
+    const bodyId = `jb-${idx}`;
+    const range  = numRange(cat);
+
+    let bodyHtml = '';
     if (cat.groups) {
-      const groupsHtml = cat.groups.map(g => `
+      bodyHtml = cat.groups.map(g => `
         <div class="jeongli-subgroup">
           <span class="jeongli-subtitle">${g.subtitle}</span>
           <ul class="jeongli-list">
@@ -37,25 +60,37 @@ function renderJeongli() {
           </ul>
         </div>
       `).join('');
-      return `
-        <div class="jeongli-card">
-          <p class="jeongli-cat-title">${cat.title}</p>
-          ${groupsHtml}
-        </div>
-      `;
-    }
-    // 그룹 없이 flat items
-    return `
-      <div class="jeongli-card">
-        <p class="jeongli-cat-title">${cat.title}</p>
+    } else {
+      bodyHtml = `
         <ul class="jeongli-list">
-          ${cat.items.map(item => `
+          ${getAllItems(cat).map(item => `
             <li><a class="jeongli-item" href="${item.url}" target="_blank" rel="noopener">${item.title}</a></li>
           `).join('')}
         </ul>
+      `;
+    }
+
+    return `
+      <div class="jeongli-card">
+        <button class="jeongli-cat-btn" aria-expanded="false" aria-controls="${bodyId}"
+                onclick="toggleJeongli(this)">
+          <span class="jeongli-cat-title">${cat.title}</span>
+          ${range ? `<span class="jeongli-num-range">${range}</span>` : ''}
+          <span class="jeongli-arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="jeongli-body" id="${bodyId}" hidden>
+          ${bodyHtml}
+        </div>
       </div>
     `;
   }).join('');
+}
+
+function toggleJeongli(btn) {
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!expanded));
+  const body = document.getElementById(btn.getAttribute('aria-controls'));
+  body.hidden = expanded;
 }
 
 /* ──────────────────────────────────────────
