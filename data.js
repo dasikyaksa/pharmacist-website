@@ -352,7 +352,7 @@ const DATA = {
       category: "박약다식 제품",
       items: [
         { name: "비타민D",     tags: ["비타민D", "면역", "뼈건강"],     thumbnail: "images/products/prod_vitd.jpg",              link: "https://www.instagram.com/p/DW_BXQSj17a/" },
-        { name: "오늘도 맑아연", tags: ["여드름", "피부", "영양제"],      thumbnail: "images/products/prod_acne_coming.svg",       link: "https://www.instagram.com/p/DYGVMgIlPPE/?img_index=1" }
+        { name: "오늘도 맑아연", tags: ["여드름", "피부", "영양제"],      thumbnail: "images/products/prod_acne.jpg",              link: "https://www.instagram.com/p/DYGVMgIlPPE/?img_index=1" }
       ]
     },
     {
