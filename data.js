@@ -386,7 +386,7 @@ const DATA = {
       category: "화장품",
       items: [
         { name: "바쿠치올",            tags: ["바쿠치올", "스킨케어", "노화"],  thumbnail: "images/products/prod_bakuchio.jpg",      link: "https://www.instagram.com/p/DY8SDrgDX77/" },
-        { name: "팜트리 수분진정라인", tags: ["수분", "진정", "화장품"],        thumbnail: "images/products/prod_palmtree.jpg",      link: "https://www.instagram.com/p/DV0UeHOD9Ey/" },
+        { name: "팜트리 수분진정라인", tags: ["수분", "진정", "화장품"],        thumbnail: "images/products/prod_palmtree.jpg",      link: "https://www.instagram.com/p/DY-6JJpD8o8/" },
         { name: "VT 리들샷",           tags: ["리들샷", "VT", "피부재생"],      thumbnail: "images/products/prod_ridleshot.jpg",     link: "https://www.instagram.com/p/DT4Ko2rjw_I/" }
       ]
     },
