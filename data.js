@@ -397,7 +397,7 @@ const DATA = {
         { name: "디오스민",  tags: ["디오스민", "붓기", "혈관"],   thumbnail: "images/products/prod_diosmin.jpg",   link: "https://www.instagram.com/p/DXy11pIj6Z4/" },
         { name: "루아빌",    tags: ["루테인", "아스타잔틴", "눈"], thumbnail: "images/products/prod_luabill.jpg",   link: "https://www.instagram.com/p/DWVE1g_D2F8/" },
         { name: "이노시톨",  tags: ["PCOS", "호르몬", "여성"],     thumbnail: "images/products/prod_inositol.jpg",  link: "https://www.instagram.com/p/DYqXWxciEL8/" },
-        { name: "아미노콤",  tags: ["아미노산", "근육", "운동"],   thumbnail: "images/products/prod_aminocom.jpg",  link: "https://www.instagram.com/p/DVqPezADyrE/" },
+        { name: "아미노콤",  tags: ["아미노산", "근육", "운동"],   thumbnail: "images/products/prod_aminocom.jpg",  link: "https://www.instagram.com/p/DZlnrtimLHW/" },
         { name: "멜라코지",  tags: ["멜라토닌", "수면"],           thumbnail: "images/products/prod_melacozy.jpg",  link: "https://www.instagram.com/p/DSmiqUMj8XX/" },
         { name: "베르베린",  tags: ["혈당", "다이어트", "인슐린"], thumbnail: "images/products/prod_berberin.jpg",  link: "https://www.instagram.com/p/DXjpo8aD5Ws/" },
         { name: "보라물",    tags: ["안토시아닌", "눈건강"],       thumbnail: "images/products/prod_borawater.jpg", link: "https://www.instagram.com/p/DVnAFGhD6jD/" },
