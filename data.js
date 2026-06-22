@@ -378,7 +378,7 @@ const DATA = {
       items: [
         { name: "마그샷",              tags: ["마그네슘", "수면", "근육"],      thumbnail: "images/products/prod_magshot.jpg",       link: "https://www.instagram.com/p/DXNpTA6D9AX/" },
         { name: "갓성비 산화마그네슘", tags: ["마그네슘", "변비", "갓성비"],   thumbnail: "images/products/prod_magox.jpg",         link: "https://www.instagram.com/p/DUfLcSKj-e0/" },
-        { name: "칼마디K2",            tags: ["칼슘", "마그네슘", "비타민K2"], thumbnail: "images/products/prod_calmadi.jpg",       link: "https://www.instagram.com/p/DX5ghDxGjjY/" },
+        { name: "칼마디K2",            tags: ["칼슘", "마그네슘", "비타민K2"], thumbnail: "images/products/prod_calmadi.jpg",       link: "https://www.instagram.com/p/DZr3UsnCIIu/" },
         { name: "풍선껌맛 철분",       tags: ["철분", "빈혈", "피로"],          thumbnail: "images/products/prod_iron.jpg",          link: "https://www.instagram.com/p/DVFc6MWD2eM/" }
       ]
     },
